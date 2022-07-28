@@ -1,0 +1,31 @@
+.clock.flip-clock-wrapper {
+  position: absolute;
+  top: 25px;
+  right: -139px;
+  margin: 0;
+  transform: scale(.65);
+
+  * {
+    border-radius: 0 !important;
+  }
+}
+
+.flip-clock-dot {
+  display: none;
+}
+
+.flip-clock-wrapper .flip {
+  margin: 0;
+  box-shadow: none;
+}
+
+.flip-clock-wrapper .flip:last-child {
+  margin-right: 10px;
+}
+
+.flip-clock-divider .flip-clock-label {
+  color: #fff;
+  font-size: 20px;
+  color: #9990C7;
+  font-weight: 700;
+}

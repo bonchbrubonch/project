@@ -1,0 +1,261 @@
+/*start experts card======*/
+.card {
+  color: #fff;
+  text-align: center;
+  align-items: center;
+
+
+  &__img {
+    margin: 0 0 35px 0;
+    height: 410px;
+    background: radial-gradient(circle, #ddbae8 0%, #ffffff 0%, #ddbae8 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    img {
+      width: auto;
+      height: 396px;
+      display: block;
+      margin: 0 auto;
+      padding-top: 25px;
+      object-position: bottom;
+    }
+  }
+
+  &__name {
+    margin: 0 0 23px 0;
+    font-family: 'Caviar Dreams';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  &__info {
+    margin: 0 0 20px 0;
+    font-family: 'Exo2', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D3CAFF;
+    height: 38px;
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 35px 0;
+    max-height: 75px;
+    overflow: hidden;
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}
+
+/*end experts card======*/
+
+/*start products card=============*/
+.product-card {
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 38px 40px 38px;
+    font-family: 'Caviar Dreams';
+    text-align: center;
+    background-color: #fff;
+    height: 100%;
+  }
+
+  &__img {
+    margin: 0 0 8px 0;
+    padding: 25px 0 0 0;
+    height: 315px;
+
+    img {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin: 0 0 15px 0;
+    height: 60px;
+    overflow: hidden;
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  &__sale {
+    margin: 0 0 10px 0;
+    height: 24px;
+    font-size: 20px;
+    line-height: 100%;
+    line-height: 33px;
+    color: #944CA2;
+  }
+
+  &__price {
+    margin: 0 0 33px 0;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__card {
+    font-size: 19px;
+    font-weight: 500;
+    color: #944ca2;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__like {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 19px;
+    width: 29px;
+    height: 25px;
+    background-image: url("../images/dest/icons/heart.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__like.active {
+    background-image: url("../images/dest/icons/heart-2.svg");
+  }
+
+  &__basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    padding: 11px 10px;
+    border-radius: 100%;
+    background-size: auto 200%;
+    background-image: linear-gradient(to bottom, #E978FF 0%, #944CA2 50%, #E978FF 100%);
+    transition: all 0.3s;
+
+    img {
+      width: 29px;
+      height: 25px;
+      object-fit: contain;
+    }
+
+    &:hover {
+      background-position: bottom center;
+      box-shadow: 2px 2px 10px #944ca2b0;
+    }
+  }
+
+  &__stickers {
+    position: absolute;
+    top: 15px;
+    left: 0;
+
+    li {
+      margin: 0 0 8px 0;
+      padding: 5px 15px;
+      font-size: 25px;
+      line-height: 80%;
+      font-weight: 700;
+    }
+
+  }
+
+  &__top {
+    background-color: #FFE531;
+    color: #0D030E;
+  }
+
+  &__sales {
+    background-color: #D3608F;
+    color: #fff;
+  }
+
+  &__new {
+    background-color: #A9E066;
+    color: #0D030E;
+  }
+}
+
+/*end products card=============*/
+
+/*start card card-universal======*/
+.card-universal {
+  position: relative;
+  background-color: #fff;
+  &__date {
+    padding: 3px 12px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    color: #fff;
+    font-size: 27px;
+    background-color: #8374D5;
+  }
+
+  &__img {
+    height: 245px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__box{
+    padding: 14px 16px 16px 16px;
+  }
+  &__title {
+    font-family: 'Caviar Dreams';
+    font-style: italic;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    position: relative;
+    font-size: 25px;
+    line-height: 27px;
+    color: #0D030E;
+    height: 83px;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 60px;
+      background-color: #944CA2;
+    }
+  }
+
+  p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  &__link {
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #944CA2;
+  }
+
+}
+
+/*end card card-universal======*/
