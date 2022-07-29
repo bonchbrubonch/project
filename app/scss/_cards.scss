@@ -54,6 +54,20 @@
   &__btn {
     margin: 0 auto;
   }
+
+  &__box {
+    padding: 0 10px 30px;
+  }
+
+  &--experts-all {
+    background-color: #fff;
+    color: #0D030E;
+
+    .card__info {
+      color: #8374D5;
+    }
+
+  }
 }
 
 /*end experts card======*/
@@ -89,6 +103,7 @@
     overflow: hidden;
     font-size: 23px;
     line-height: 30px;
+    font-weight: 300;
   }
 
   &__sale {
@@ -188,6 +203,16 @@
     background-color: #A9E066;
     color: #0D030E;
   }
+
+  &--catalog {
+    .product-card__stickers li {
+      margin: 0 0 8px 0px;
+    }
+
+    .product-card__inner {
+      padding: 0 25px 40px 25px;
+    }
+  }
 }
 
 /*end products card=============*/
@@ -196,6 +221,7 @@
 .card-universal {
   position: relative;
   background-color: #fff;
+
   &__date {
     padding: 3px 12px;
     position: absolute;
@@ -215,30 +241,30 @@
       object-fit: cover;
     }
   }
-  &__box{
+
+  &__box {
     padding: 14px 16px 16px 16px;
+
+    span {
+      margin: 0 0 10px 0;
+      display: block;
+      height: 1px;
+      width: 60px;
+      background-color: #944CA2;
+    }
   }
+
   &__title {
     font-family: 'Caviar Dreams';
     font-style: italic;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     position: relative;
     font-size: 25px;
     line-height: 27px;
     color: #0D030E;
     height: 83px;
     overflow: hidden;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 1px;
-      width: 60px;
-      background-color: #944CA2;
-    }
   }
 
   p {
@@ -256,6 +282,36 @@
     color: #944CA2;
   }
 
+  &__btn {
+    padding: 15px 23px;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+
+  &--service {
+    background-color: #fff;
+
+    h3 {
+      height: 64px;
+      font-size: 26px;
+      line-height: 31px;
+    }
+
+    .card-universal__img {
+      height: 270px;
+    }
+
+    .card-universal__box {
+      padding: 34px 15px 16px 20px;
+    }
+
+    p {
+      margin: 0 0 45px 0;
+      height: 125px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
 }
 
 /*end card card-universal======*/
