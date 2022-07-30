@@ -84,6 +84,7 @@ body.lock {
 .title {
   display: inline;
   position: relative;
+  z-index: 10;
   font-family: "Corinthia";
   text-decoration: none;
   font-size: 92px;
@@ -93,6 +94,7 @@ body.lock {
 
   span {
     position: absolute;
+    z-index: -1 !important;
     display: block;
     font-family: 'Caviar Dreams';
     font-style: italic;
@@ -101,6 +103,18 @@ body.lock {
     text-decoration: underline;
     color: #944CA2;
   }
+}
+
+.form span.error {
+  margin: 0 0 0 25px;
+  display: block;
+  color: #944CA2;
+  font-size: 12px;
+}
+
+.subscribe__form span.error {
+
+  color: red;
 }
 
 /*start breadcrumbs=========*/
@@ -115,13 +129,12 @@ body.lock {
 
   &__list {
     li {
-      display: inline-block;
+      display: inline;
       position: relative;
-      font-size: 14px;
       line-height: 20px;
       color: #fff;
       font-size: 16px;
-      line-height: 20px;
+      line-height: 100%;
 
       &+li {
         padding-left: 28px;
@@ -157,6 +170,7 @@ body.lock {
 /*start pagination===========*/
 .pagination {
   font-weight: 500;
+
   &__list {
     display: flex;
     align-items: center;
@@ -164,7 +178,7 @@ body.lock {
   }
 
   li {
-    
+
     &+li {
       margin-left: 10px;
     }
@@ -185,10 +199,12 @@ body.lock {
     font-size: 50px;
     line-height: 57px;
     color: #fff;
+
     &.active {
       position: relative;
       font-size: 70px;
-      &::before{
+
+      &::before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -219,7 +235,8 @@ body.lock {
   &__last {
     opacity: .9;
     pointer-events: none;
-    svg path{
+
+    svg path {
       fill: #fff;
     }
   }

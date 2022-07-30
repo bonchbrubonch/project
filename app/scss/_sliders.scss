@@ -153,7 +153,7 @@
     top: -69px;
     right: 28px;
   }
- 
+
 }
 
 /*end slider-product==============*/
@@ -207,3 +207,29 @@
 }
 
 /*end  review-slider==============*/
+
+/*start product-all-slider===========*/
+.product-all-slider {
+  margin: 10px 0 0 0;
+
+  .slick-arrow {
+    position: absolute;
+  }
+
+  .prev {
+    top: -67px;
+    right: -2px;
+  }
+
+  .next {
+    top: -71px;
+    right: 35px;
+  }
+
+  .slick-slide {
+    margin: 0 7.5px;
+  }
+}
+
+/*end product-all-slider===========*/
+

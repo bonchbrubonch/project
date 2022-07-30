@@ -6,6 +6,7 @@
 
 
   &__img {
+    width: 100%;
     margin: 0 0 35px 0;
     height: 410px;
     background: radial-gradient(circle, #ddbae8 0%, #ffffff 0%, #ddbae8 100%);
@@ -60,11 +61,22 @@
   }
 
   &--experts-all {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: #fff;
     color: #0D030E;
 
     .card__info {
       color: #8374D5;
+    }
+    .card__box{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .card__name {
+      flex: 1 1 auto;
     }
 
   }

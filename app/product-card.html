@@ -25,7 +25,7 @@
         <div class="container">
           <div class="header__inner">
             <a href="#" class="header__logo">
-              <img src="images/dest/icons/logo.svg" alt="logo">
+              <img src="images/dest/content/logo.png" alt="logo">
             </a>
             <nav class="header__menu">
               <ul class="header__list">
@@ -450,22 +450,20 @@
               Оставить
             </h3>
             <span class="leave-review__subtitle">А что вы думаете об этом товаре?</span>
-            <form class="leave-review__form">
+            <form class="leave-review__form form">
               <div class="leave-review__form-inner">
                 <div class="leave-review__input-wrap">
-                  <input type="text" placeholder="Ваше имя" required>
+                  <input name="full_name" type="text" placeholder="Ваше имя" required>
                 </div>
                 <div class="leave-review__input-wrap">
-                  <input type="email" placeholder="Ваш email" required>
+                  <input name="email" type="email" placeholder="Ваш email" required>
                 </div>
                 <div class="leave-review__input-wrap">
-                  <input type="text" placeholder="Ваш телефон" required>
+                  <input name="phone" type="text" placeholder="Ваш телефон" required>
                 </div>
               </div>
               <div class="leave-review__textarea-wrap">
-                <textarea placeholder="Ваш отзыв" required>
-
-              </textarea>
+                <textarea name="review" placeholder="Ваш отзыв" required></textarea>
               </div>
               <div class="leave-review__box">
                 <span class="leave-review__check"></span>
@@ -478,7 +476,7 @@
           </div>
         </div>
       </section>
-     
+
       <section class="product" style="background-image: url('images/dest/content/product/productBG.png');">
         <div class="container">
           <div class="product__top">
@@ -488,7 +486,7 @@
             </h3>
           </div>
           <div class="product__inner">
-            <div class="slider-product">
+            <div class="product-all-slider">
               <div class="product-card">
                 <div class="product-card__inner">
                   <ul class="product-card__stickers">
@@ -649,14 +647,14 @@
             <p class="subscribe__subtitle">
               Чтобы первыми узнать о новинках и акциях
             </p>
-
-            <form class="subscribe__form">
+    
+            <form class="subscribe__form form">
               <div class="subscribe__form-inner">
                 <div class="subscribe__form-input-wrap">
-                  <input type="text" placeholder="Ваше имя" required>
+                  <input name="full_name" type="text" placeholder="Ваше имя" required>
                 </div>
                 <div class="subscribe__form-input-wrap">
-                  <input type="email" placeholder="Ваш email" required>
+                  <input name="email" type="email" placeholder="Ваш email" required>
                 </div>
                 <button class="subscribe__btn btn">
                   Подписаться
@@ -669,14 +667,14 @@
             </form>
           </div>
         </div>
-      </section> 
+      </section>
 
     </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <a href="#" class="footer__logo">
-            <img src="images/dest/icons/logo.svg" alt="logo">
+            <img src="images/dest/content/logo.png" alt="logo">
           </a>
           <ul class="footer__list">
             <li>
@@ -766,6 +764,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="

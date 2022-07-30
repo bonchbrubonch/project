@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content" style="background-image: url('images/dest/content/page-bg.png');">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#" class="header__logo">
+              <img src="images/dest/content/logo.png" alt="logo">
+            </a>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li>
+                  <a href="#">Главная</a>
+                </li>
+                <li>
+                  <a href="#">О нас</a>
+                </li>
+                <li>
+                  <a href="#">Эксперты</a>
+                </li>
+                <li>
+                  <a href="#">Услуги</a>
+                </li>
+                <li>
+                  <a href="#">Магазин</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+                <ul class="header__social social">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                        <g id="_179319" data-name="179319" transform="translate(0.5 0.5)">
+                          <path id="Контур_34" data-name="Контур 34" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z"
+                            fill="none" stroke="#8374d5" stroke-width="1" />
+                          <path id="Контур_35" data-name="Контур 35"
+                            d="M115.626,75.132h2.245V72.547h-2.639v.009c-3.2.088-3.854,1.489-3.911,2.961h-.007v1.291h-2.178v2.531h2.178v6.785H114.6V79.339h2.688l.519-2.531H114.6v-.78A.946.946,0,0,1,115.626,75.132Z"
+                            transform="translate(-98.504 -64.368)" fill="#8374d5" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                        <g id="instagram" transform="translate(0.5 0.5)">
+                          <path id="Контур_36" data-name="Контур 36"
+                            d="M213.508,210.254A3.254,3.254,0,1,1,210.254,207,3.254,3.254,0,0,1,213.508,210.254Zm0,0"
+                            transform="translate(-195.254 -195.254)" fill="none" stroke="#8374d5" stroke-width="1" />
+                          <path id="Контур_37" data-name="Контур 37"
+                            d="M151.1,137.734a3.233,3.233,0,0,0-1.853-1.853,5.4,5.4,0,0,0-1.812-.336c-1.03-.047-1.338-.057-3.945-.057s-2.915.01-3.945.057a5.4,5.4,0,0,0-1.812.336,3.234,3.234,0,0,0-1.853,1.853,5.4,5.4,0,0,0-.336,1.813c-.047,1.029-.057,1.338-.057,3.945s.01,2.915.057,3.945a5.4,5.4,0,0,0,.336,1.812,3.233,3.233,0,0,0,1.853,1.853,5.394,5.394,0,0,0,1.813.336c1.029.047,1.338.057,3.944.057s2.916-.01,3.945-.057a5.394,5.394,0,0,0,1.813-.336,3.233,3.233,0,0,0,1.853-1.853,5.405,5.405,0,0,0,.336-1.812c.047-1.03.057-1.338.057-3.945s-.01-2.915-.057-3.945A5.394,5.394,0,0,0,151.1,137.734Zm-7.61,10.77a5.013,5.013,0,1,1,5.013-5.013A5.013,5.013,0,0,1,143.488,148.5Zm5.211-9.052a1.171,1.171,0,1,1,1.171-1.171A1.171,1.171,0,0,1,148.7,139.452Zm0,0"
+                            transform="translate(-128.488 -128.491)" fill="none" stroke="#8374d5" stroke-width="1" />
+                          <path id="Контур_38" data-name="Контур 38"
+                            d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.561,18.551a6.319,6.319,0,0,1-.4,2.091,4.4,4.4,0,0,1-2.519,2.519,6.324,6.324,0,0,1-2.091.4c-.919.042-1.212.052-3.551.052s-2.633-.01-3.551-.052a6.324,6.324,0,0,1-2.091-.4,4.4,4.4,0,0,1-2.519-2.519,6.318,6.318,0,0,1-.4-2.091C6.4,17.633,6.387,17.339,6.387,15s.01-2.633.052-3.551a6.32,6.32,0,0,1,.4-2.091A4.407,4.407,0,0,1,9.358,6.839a6.325,6.325,0,0,1,2.091-.4c.919-.042,1.212-.052,3.551-.052s2.633.01,3.551.052a6.327,6.327,0,0,1,2.091.4,4.405,4.405,0,0,1,2.519,2.519,6.319,6.319,0,0,1,.4,2.091c.042.919.052,1.212.052,3.551S23.6,17.633,23.561,18.551Zm0,0"
+                            fill="none" stroke="#8374d5" stroke-width="1" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </nav>
+            <div class="header__info">
+              <a href="#" class="header__user btn btn--user">
+                <span>
+                  <picture class="slider__img">
+                    <source srcset="images/dest/icons/user-2.svg" media="(max-width:1300px)">
+                    <img src="images/dest/icons/user.svg" alt="user">
+                  </picture>
+                </span>
+                Личный кабинет
+              </a>
+              <a href="#" class="header__basket">
+                <img src="images/dest/icons/basket.svg" alt="shop">
+                <span>3</span>
+              </a>
+              <button class="header__menu-btn">
+                <span class="header__menu-line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="title-wrap">
+          <h1 class="products-all-title title">
+            <span>Новости</span>
+            Наши
+          </h1>
+        </div>
+      </div>
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li><a href="#">Главная</a></li>
+              <li><span>Новости</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <div class="all-news">
+      <div class="container">
+        <div class="all-news__inner">
+          <ul class="all-news__list">
+            <li>
+              <div class="card-universal">
+                <div class="card-universal__date">10/04</div>
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/news-1.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/news-1.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Пять мифов о Предсказание судьбы
+                  </h3>
+                  <span></span>
+                  <p>
+                    Много кого интересует предсказание судьбы, но мало кто прибегает к помощи профессионалов. Это связано с
+                    некоторыми мифами, связанными с возможностью заглянуть в будущее.
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    ЧИТАТЬ ДАЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-universal">
+                <div class="card-universal__date">10/04</div>
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/news-2.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/news-2.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Экспресс-расклады на каждый день
+                  </h3>
+                  <span></span>
+                  <p>
+                    В последнее время наблюдается тенденция к увеличению популярности быстрых гаданий. Экспресс-расклады
+                    достаточно точны. Прогноз такого гадания будет на ближайший промежуток времени, он укажет, как Вам
+                    сейчас
+                    нужно действовать для благоприятного результата, на что обратить внимание
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    ЧИТАТЬ ДАЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-universal">
+                <div class="card-universal__date">12/04</div>
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/news-3.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/news-3.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    На карантин с детьми: чем увлечь малышей разных знаков зодиака
+                  </h3>
+                  <span></span>
+                  <p>
+                    «…Когда люди произносили в загсе клятвы в вечной любви, они не предполагали, что им придется провести
+                    вместе
+                    две недели»...
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    ЧИТАТЬ ДАЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-universal">
+                <div class="card-universal__date">10/04</div>
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/news-1.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/news-1.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Пять мифов о Предсказание судьбы
+                  </h3>
+                  <span></span>
+                  <p>
+                    Много кого интересует предсказание судьбы, но мало кто прибегает к помощи профессионалов. Это связано с
+                    некоторыми мифами, связанными с возможностью заглянуть в будущее.
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    ЧИТАТЬ ДАЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-universal">
+                <div class="card-universal__date">10/04</div>
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/news-2.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/news-2.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Экспресс-расклады на каждый день
+                  </h3>
+                  <span></span>
+                  <p>
+                    В последнее время наблюдается тенденция к увеличению популярности быстрых гаданий. Экспресс-расклады
+                    достаточно точны. Прогноз такого гадания будет на ближайший промежуток времени, он укажет, как Вам
+                    сейчас
+                    нужно действовать для благоприятного результата, на что обратить внимание
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    ЧИТАТЬ ДАЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-universal">
+                <div class="card-universal__date">12/04</div>
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/news-3.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/news-3.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    На карантин с детьми: чем увлечь малышей разных знаков зодиака
+                  </h3>
+                  <span></span>
+                  <p>
+                    «…Когда люди произносили в загсе клятвы в вечной любви, они не предполагали, что им придется провести
+                    вместе
+                    две недели»...
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    ЧИТАТЬ ДАЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-universal">
+                <div class="card-universal__date">10/04</div>
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/news-1.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/news-1.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Пять мифов о Предсказание судьбы
+                  </h3>
+                  <span></span>
+                  <p>
+                    Много кого интересует предсказание судьбы, но мало кто прибегает к помощи профессионалов. Это связано с
+                    некоторыми мифами, связанными с возможностью заглянуть в будущее.
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    ЧИТАТЬ ДАЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-universal">
+                <div class="card-universal__date">10/04</div>
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/news-2.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/news-2.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Экспресс-расклады на каждый день
+                  </h3>
+                  <span></span>
+                  <p>
+                    В последнее время наблюдается тенденция к увеличению популярности быстрых гаданий. Экспресс-расклады
+                    достаточно точны. Прогноз такого гадания будет на ближайший промежуток времени, он укажет, как Вам
+                    сейчас
+                    нужно действовать для благоприятного результата, на что обратить внимание
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    ЧИТАТЬ ДАЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-universal">
+                <div class="card-universal__date">12/04</div>
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/news-3.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/news-3.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    На карантин с детьми: чем увлечь малышей разных знаков зодиака
+                  </h3>
+                  <span></span>
+                  <p>
+                    «…Когда люди произносили в загсе клятвы в вечной любви, они не предполагали, что им придется провести
+                    вместе
+                    две недели»...
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    ЧИТАТЬ ДАЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li>
+                <a class="pagination__btn-prev pagination__last" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.01" height="19.503" viewBox="0 0 20.01 19.503">
+                    <path id="arrow-right-solid"
+                      d="M8.508,38.956l.991-.991a1.067,1.067,0,0,1,1.514,0l8.682,8.677a1.067,1.067,0,0,1,0,1.514l-8.682,8.682a1.067,1.067,0,0,1-1.514,0l-.991-.991a1.073,1.073,0,0,1,.018-1.532l5.381-5.127H1.072A1.069,1.069,0,0,1,0,48.116V46.687a1.069,1.069,0,0,1,1.072-1.072H13.907L8.525,40.488A1.065,1.065,0,0,1,8.508,38.956Z"
+                      transform="translate(0 -37.65)" fill="#944ca2" />
+                  </svg>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><span class="active">3</span></li>
+              <li><span>...</span></li>
+              <li><a href="#">15</a></li>
+              <li>
+                <a class="pagination__btn-next" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.01" height="19.503" viewBox="0 0 20.01 19.503">
+                    <path id="arrow-right-solid"
+                      d="M8.508,38.956l.991-.991a1.067,1.067,0,0,1,1.514,0l8.682,8.677a1.067,1.067,0,0,1,0,1.514l-8.682,8.682a1.067,1.067,0,0,1-1.514,0l-.991-.991a1.073,1.073,0,0,1,.018-1.532l5.381-5.127H1.072A1.069,1.069,0,0,1,0,48.116V46.687a1.069,1.069,0,0,1,1.072-1.072H13.907L8.525,40.488A1.065,1.065,0,0,1,8.508,38.956Z"
+                      transform="translate(0 -37.65)" fill="#944ca2" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="subscribe" style="background-image: url('images/dest/content/subscribe/subscribeBG.png');">
+      <div class="container">
+        <div class="subscribe__inner">
+          <h3 class="subscribe__title title">
+            <span>Не забудьте</span>
+            Подписаться
+          </h3>
+          <p class="subscribe__subtitle">
+            Чтобы первыми узнать о новинках и акциях
+          </p>
+  
+          <form class="subscribe__form form">
+            <div class="subscribe__form-inner">
+              <div class="subscribe__form-input-wrap">
+                <input name="full_name" type="text" placeholder="Ваше имя" required>
+              </div>
+              <div class="subscribe__form-input-wrap">
+                <input name="email" type="email" placeholder="Ваш email" required>
+              </div>
+              <button class="subscribe__btn btn">
+                Подписаться
+              </button>
+            </div>
+            <div class="subscribe__box">
+              <span class="subscribe__check"></span>
+              <p>Я даю согласие на обработку персональных данных</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__logo">
+            <img src="images/dest/content/logo.png" alt="logo">
+          </a>
+          <ul class="footer__list">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Эксперты</a>
+            </li>
+            <li>
+              <a href="#">Услуги</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+          <a href="#" class="footer__user btn btn--user">
+            <span>
+              <img src="images/dest/icons/user.svg" alt="user">
+            </span>
+            Личный кабинет
+          </a>
+          <ul class="footer__social social">
+            <li>
+              <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                  <g id="_179319" data-name="179319" transform="translate(0.5 0.5)">
+                    <path id="Контур_34" data-name="Контур 34" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z" fill="none"
+                      stroke="#fff" stroke-width="1" />
+                    <path id="Контур_35" data-name="Контур 35"
+                      d="M115.626,75.132h2.245V72.547h-2.639v.009c-3.2.088-3.854,1.489-3.911,2.961h-.007v1.291h-2.178v2.531h2.178v6.785H114.6V79.339h2.688l.519-2.531H114.6v-.78A.946.946,0,0,1,115.626,75.132Z"
+                      transform="translate(-98.504 -64.368)" fill="#fff" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                  <g id="instagram" transform="translate(0.5 0.5)">
+                    <path id="Контур_36" data-name="Контур 36"
+                      d="M213.508,210.254A3.254,3.254,0,1,1,210.254,207,3.254,3.254,0,0,1,213.508,210.254Zm0,0"
+                      transform="translate(-195.254 -195.254)" fill="none" stroke="#fff" stroke-width="1" />
+                    <path id="Контур_37" data-name="Контур 37"
+                      d="M151.1,137.734a3.233,3.233,0,0,0-1.853-1.853,5.4,5.4,0,0,0-1.812-.336c-1.03-.047-1.338-.057-3.945-.057s-2.915.01-3.945.057a5.4,5.4,0,0,0-1.812.336,3.234,3.234,0,0,0-1.853,1.853,5.4,5.4,0,0,0-.336,1.813c-.047,1.029-.057,1.338-.057,3.945s.01,2.915.057,3.945a5.4,5.4,0,0,0,.336,1.812,3.233,3.233,0,0,0,1.853,1.853,5.394,5.394,0,0,0,1.813.336c1.029.047,1.338.057,3.944.057s2.916-.01,3.945-.057a5.394,5.394,0,0,0,1.813-.336,3.233,3.233,0,0,0,1.853-1.853,5.405,5.405,0,0,0,.336-1.812c.047-1.03.057-1.338.057-3.945s-.01-2.915-.057-3.945A5.394,5.394,0,0,0,151.1,137.734Zm-7.61,10.77a5.013,5.013,0,1,1,5.013-5.013A5.013,5.013,0,0,1,143.488,148.5Zm5.211-9.052a1.171,1.171,0,1,1,1.171-1.171A1.171,1.171,0,0,1,148.7,139.452Zm0,0"
+                      transform="translate(-128.488 -128.491)" fill="none" stroke="#8374d5" stroke-width="1" />
+                    <path id="Контур_38" data-name="Контур 38"
+                      d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.561,18.551a6.319,6.319,0,0,1-.4,2.091,4.4,4.4,0,0,1-2.519,2.519,6.324,6.324,0,0,1-2.091.4c-.919.042-1.212.052-3.551.052s-2.633-.01-3.551-.052a6.324,6.324,0,0,1-2.091-.4,4.4,4.4,0,0,1-2.519-2.519,6.318,6.318,0,0,1-.4-2.091C6.4,17.633,6.387,17.339,6.387,15s.01-2.633.052-3.551a6.32,6.32,0,0,1,.4-2.091A4.407,4.407,0,0,1,9.358,6.839a6.325,6.325,0,0,1,2.091-.4c.919-.042,1.212-.052,3.551-.052s2.633.01,3.551.052a6.327,6.327,0,0,1,2.091.4,4.405,4.405,0,0,1,2.519,2.519,6.319,6.319,0,0,1,.4,2.091c.042.919.052,1.212.052,3.551S23.6,17.633,23.561,18.551Zm0,0"
+                      fill="none" stroke="#fff" stroke-width="1" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p>EZOMIR © Copyright 2020. Разработано компанией SFdevelop</p>
+            <ul>
+              <li>
+                <img src="images/dest/content/footer/visa.jpg" alt="visa">
+              </li>
+              <li>
+                <img src="images/dest/content/footer/master.jpg" alt="mastercard">
+              </li>
+            </ul>
+            <a href="#" class="footer__politic">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/flipclock.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
