@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content" style="background-image: url('images/dest/content/page-bg.png');">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#" class="header__logo">
+              <img src="images/dest/content/logo.png" alt="logo">
+            </a>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li>
+                  <a href="#">Главная</a>
+                </li>
+                <li>
+                  <a href="#">О нас</a>
+                </li>
+                <li>
+                  <a href="#">Эксперты</a>
+                </li>
+                <li>
+                  <a href="#">Услуги</a>
+                </li>
+                <li>
+                  <a href="#">Магазин</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+                <ul class="header__social social">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                        <g id="_179319" data-name="179319" transform="translate(0.5 0.5)">
+                          <path id="Контур_34" data-name="Контур 34" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z"
+                            fill="none" stroke="#8374d5" stroke-width="1" />
+                          <path id="Контур_35" data-name="Контур 35"
+                            d="M115.626,75.132h2.245V72.547h-2.639v.009c-3.2.088-3.854,1.489-3.911,2.961h-.007v1.291h-2.178v2.531h2.178v6.785H114.6V79.339h2.688l.519-2.531H114.6v-.78A.946.946,0,0,1,115.626,75.132Z"
+                            transform="translate(-98.504 -64.368)" fill="#8374d5" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                        <g id="instagram" transform="translate(0.5 0.5)">
+                          <path id="Контур_36" data-name="Контур 36"
+                            d="M213.508,210.254A3.254,3.254,0,1,1,210.254,207,3.254,3.254,0,0,1,213.508,210.254Zm0,0"
+                            transform="translate(-195.254 -195.254)" fill="none" stroke="#8374d5" stroke-width="1" />
+                          <path id="Контур_37" data-name="Контур 37"
+                            d="M151.1,137.734a3.233,3.233,0,0,0-1.853-1.853,5.4,5.4,0,0,0-1.812-.336c-1.03-.047-1.338-.057-3.945-.057s-2.915.01-3.945.057a5.4,5.4,0,0,0-1.812.336,3.234,3.234,0,0,0-1.853,1.853,5.4,5.4,0,0,0-.336,1.813c-.047,1.029-.057,1.338-.057,3.945s.01,2.915.057,3.945a5.4,5.4,0,0,0,.336,1.812,3.233,3.233,0,0,0,1.853,1.853,5.394,5.394,0,0,0,1.813.336c1.029.047,1.338.057,3.944.057s2.916-.01,3.945-.057a5.394,5.394,0,0,0,1.813-.336,3.233,3.233,0,0,0,1.853-1.853,5.405,5.405,0,0,0,.336-1.812c.047-1.03.057-1.338.057-3.945s-.01-2.915-.057-3.945A5.394,5.394,0,0,0,151.1,137.734Zm-7.61,10.77a5.013,5.013,0,1,1,5.013-5.013A5.013,5.013,0,0,1,143.488,148.5Zm5.211-9.052a1.171,1.171,0,1,1,1.171-1.171A1.171,1.171,0,0,1,148.7,139.452Zm0,0"
+                            transform="translate(-128.488 -128.491)" fill="none" stroke="#8374d5" stroke-width="1" />
+                          <path id="Контур_38" data-name="Контур 38"
+                            d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.561,18.551a6.319,6.319,0,0,1-.4,2.091,4.4,4.4,0,0,1-2.519,2.519,6.324,6.324,0,0,1-2.091.4c-.919.042-1.212.052-3.551.052s-2.633-.01-3.551-.052a6.324,6.324,0,0,1-2.091-.4,4.4,4.4,0,0,1-2.519-2.519,6.318,6.318,0,0,1-.4-2.091C6.4,17.633,6.387,17.339,6.387,15s.01-2.633.052-3.551a6.32,6.32,0,0,1,.4-2.091A4.407,4.407,0,0,1,9.358,6.839a6.325,6.325,0,0,1,2.091-.4c.919-.042,1.212-.052,3.551-.052s2.633.01,3.551.052a6.327,6.327,0,0,1,2.091.4,4.405,4.405,0,0,1,2.519,2.519,6.319,6.319,0,0,1,.4,2.091c.042.919.052,1.212.052,3.551S23.6,17.633,23.561,18.551Zm0,0"
+                            fill="none" stroke="#8374d5" stroke-width="1" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </nav>
+            <div class="header__info">
+              <a href="#" class="header__user btn btn--user">
+                <span>
+                  <picture class="slider__img">
+                    <source srcset="images/dest/icons/user-2.svg" media="(max-width:1300px)">
+                    <img src="images/dest/icons/user.svg" alt="user">
+                  </picture>
+                </span>
+                Личный кабинет
+              </a>
+              <a href="#" class="header__basket">
+                <img src="images/dest/icons/basket.svg" alt="shop">
+                <span>3</span>
+              </a>
+              <button class="header__menu-btn">
+                <span class="header__menu-line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="title-wrap">
+          <h1 class="all-experts-title title">
+            <span>Эксперты</span>
+            Наши
+          </h1>
+        </div>
+      </div>
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Эксперты</a></li>
+              <li><span>Элеонора Иванова</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="expert-card">
+        <div class="container">
+          <div class="expert-card__inner">
+            <div class="expert-card__img">
+              <img src="images/dest/content/sliders/expert-1.png" alt="img">
+            </div>
+            <div class="expert-card__right">
+              <div class="expert-card__name">
+                Элеонора Иванова
+              </div>
+              <div class="expert-card__info">
+                Таролог / Водолей / 112 отзывов
+              </div>
+              <div class="expert-card__text">
+                <p>
+                  Я таролог. В моем арсенале множество способов решения проблем — по очистке взаимоотношений от
+                  негатива, на примирение, как найти хорошую работу, как защитить себя. Больше всего в своей работе мне
+                  нравится помогать людям — кому-то принять верное решение, а кому-то понять, почему все произошло
+                  именно так.
+                </p>
+                <p>
+                  В нашей семье все женщины умели гадать на картах — и мама, и бабушка, и прабабушка. Но только я
+                  сделала это своей профессией. Картами увлеклась где-то лет в 12, и с этого времени я с ними не
+                  расставалась.
+                </p>
+                <p>
+                  Я появилась на свет с врожденным пороком сердца, и до операции почти постоянно болела. Во время
+                  операции пережила клиническую смерть — возможно, это тоже повлияло на мои способности. Моя мама
+                  работала воспитателем в детском саду, и я часто ходила ей помогать, мне это нравилось. Поэтому
+                  неудивительно, что я продолжила семейную династию (бабушка работала учительницей). В 90-е годы по
+                  состоянию здоровья с работы в садике пришлось уйти.
+                </p>
+                <p>
+                  Я таролог. В моем арсенале множество способов решения проблем — по очистке взаимоотношений от
+                  негатива, на примирение, как найти хорошую работу, как защитить себя. Больше всего в своей работе мне
+                  нравится помогать людям — кому-то принять верное решение, а кому-то понять, почему все произошло
+                  именно так.
+                </p>
+              </div>
+              <button class="expert-card__btn">
+                ПОКАЗАТЬ ПОЛНОСТЬЮ
+              </button>
+              <div class="expert-card__bottom">
+                <strong>Консультирую на темы:</strong>
+                <span>Любовь, Семья, Финансы, Работа, Энергетика.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="expert-service">
+        <div class="container">
+          <div class="expert-service__inner">
+            <h3 class="expert-service__title title">
+              <span>Эксперта</span>
+              Услуги
+            </h3>
+            <div class="expert-service__info">
+              Для заказа выберите одну из услуг
+            </div>
+            <div class="expert-service-slider">
+              <div class="card-universal">
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/service-1.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/service-1.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Гадание на кофейной гуще
+                  </h3>
+                  <span></span>
+                  <p>
+                    Данный способ предсказать свое будущее является наиболее известным и часто применяемым гаданием.
+                    Практически каждый если и не пробовал гадать таким способом, то, по крайней мере, слышал о нем...
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    УЗНАТЬ БОЛЬШЕ
+                  </a>
+                </div>
+              </div>
+              <div class="card-universal">
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/service-2.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/service-2.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Таро расклад «Вторая половинка»
+                  </h3>
+                  <span></span>
+                  <p>
+                    Все мы мечтам найти свою вторую половинку, ту самую с которой хочется пройти вместе эту жизнь и все
+                    последующие. Но, часто бывает так, что мы не дожидаемся свою судьбу, выбираем не того в свои
+                    любовный партнеры и из-за этого мучаемся всю жизнь.
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    УЗНАТЬ БОЛЬШЕ
+                  </a>
+                </div>
+              </div>
+              <div class="card-universal">
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/service-3.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/service-3.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Ритуал «Отчитка негативных цифр в дате рождения»
+                  </h3>
+                  <span></span>
+                  <p>
+                    Определённые цифры в дате рождения могут быть показателем кармических уроков, тех испытаний которые
+                    судьба вам уготовила
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    УЗНАТЬ БОЛЬШЕ
+                  </a>
+                </div>
+              </div>
+              <div class="card-universal">
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/service-1.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/service-1.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Гадание на кофейной гуще
+                  </h3>
+                  <span></span>
+                  <p>
+                    Данный способ предсказать свое будущее является наиболее известным и часто применяемым гаданием.
+                    Практически каждый если и не пробовал гадать таким способом, то, по крайней мере, слышал о нем...
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    УЗНАТЬ БОЛЬШЕ
+                  </a>
+                </div>
+              </div>
+              <div class="card-universal">
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/service-2.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/service-2.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Таро расклад «Вторая половинка»
+                  </h3>
+                  <span></span>
+                  <p>
+                    Все мы мечтам найти свою вторую половинку, ту самую с которой хочется пройти вместе эту жизнь и все
+                    последующие. Но, часто бывает так, что мы не дожидаемся свою судьбу, выбираем не того в свои
+                    любовный партнеры и из-за этого мучаемся всю жизнь.
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    УЗНАТЬ БОЛЬШЕ
+                  </a>
+                </div>
+              </div>
+              <div class="card-universal">
+                <div class="card-universal__img">
+                  <picture>
+                    <source srcset="images/dest/content/sliders/service-3.webp" type="image/webp">
+                    <img src="images/dest/content/sliders/service-3.jpg" alt="img">
+                  </picture>
+                </div>
+                <div class="card-universal__box">
+                  <h3 class="card-universal__title">
+                    Ритуал «Отчитка негативных цифр в дате рождения»
+                  </h3>
+                  <span></span>
+                  <p>
+                    Определённые цифры в дате рождения могут быть показателем кармических уроков, тех испытаний которые
+                    судьба вам уготовила
+                  </p>
+                  <a href="#" class="card-universal__link">
+                    УЗНАТЬ БОЛЬШЕ
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="date">
+        <div class="container">
+          <div class="date__inner">
+            <h3 class="date__title title">
+              <span>Дату</span>
+              Выберите
+            </h3>
+            <div class="date__info">
+              Укажите удобною для вас дату в графике выбранного эксперта
+            </div>
+            <ul class="date__list">
+              <li class="date-active">
+                <strong>18 мая</strong>
+                <span>ПОНЕДЕЛЬНИК</span>
+              </li>
+              <li>
+                <strong>19 мая</strong>
+                <span>ВТОРНИК</span>
+              </li>
+              <li>
+                <strong>20 мая</strong>
+                <span>СРЕДА</span>
+              </li>
+              <li>
+                <strong>21 мая</strong>
+                <span>ЧЕТВЕРГ</span>
+              </li>
+              <li>
+                <strong>22 мая</strong>
+                <span>ПЯТНИЦА</span>
+              </li>
+              <li>
+                <strong>23 мая</strong>
+                <span>СУБОТА</span>
+              </li>
+              <li class="date-busy">
+                <strong>24 мая</strong>
+                <span>ВОСКРЕСЕНЬЕ</span>
+              </li>
+              <li>
+                <strong>18 мая</strong>
+                <span>ПОНЕДЕЛЬНИК</span>
+              </li>
+              <li>
+                <strong>19 мая</strong>
+                <span>ВТОРНИК</span>
+              </li>
+              <li>
+                <strong>20 мая</strong>
+                <span>СРЕДА</span>
+              </li>
+              <li>
+                <strong>21 мая</strong>
+                <span>ЧЕТВЕРГ</span>
+              </li>
+              <li>
+                <strong>22 мая</strong>
+                <span>ПЯТНИЦА</span>
+              </li>
+              <li>
+                <strong>23 мая</strong>
+                <span>СУБОТА</span>
+              </li>
+              <li class="date-busy">
+                <strong>24 мая</strong>
+                <span>ВОСКРЕСЕНЬЕ</span>
+              </li>
+              <li>
+                <strong>18 мая</strong>
+                <span>ПОНЕДЕЛЬНИК</span>
+              </li>
+              <li>
+                <strong>19 мая</strong>
+                <span>ВТОРНИК</span>
+              </li>
+              <li>
+                <strong>20 мая</strong>
+                <span>СРЕДА</span>
+              </li>
+              <li>
+                <strong>21 мая</strong>
+                <span>ЧЕТВЕРГ</span>
+              </li>
+              <li>
+                <strong>22 мая</strong>
+                <span>ПЯТНИЦА</span>
+              </li>
+              <li>
+                <strong>23 мая</strong>
+                <span>СУБОТА</span>
+              </li>
+              <li class="date-busy">
+                <strong>24 мая</strong>
+                <span>ВОСКРЕСЕНЬЕ</span>
+              </li>
+              <li>
+                <strong>18 мая</strong>
+                <span>ПОНЕДЕЛЬНИК</span>
+              </li>
+              <li>
+                <strong>19 мая</strong>
+                <span>ВТОРНИК</span>
+              </li>
+              <li>
+                <strong>20 мая</strong>
+                <span>СРЕДА</span>
+              </li>
+              <li>
+                <strong>21 мая</strong>
+                <span>ЧЕТВЕРГ</span>
+              </li>
+              <li>
+                <strong>22 мая</strong>
+                <span>ПЯТНИЦА</span>
+              </li>
+              <li>
+                <strong>23 мая</strong>
+                <span>СУБОТА</span>
+              </li>
+              <li class="date-busy">
+                <strong>24 мая</strong>
+                <span>ВОСКРЕСЕНЬЕ</span>
+              </li>
+              <li>
+                <strong>18 мая</strong>
+                <span>ПОНЕДЕЛЬНИК</span>
+              </li>
+              <li>
+                <strong>19 мая</strong>
+                <span>ВТОРНИК</span>
+              </li>
+              <li>
+                <strong>20 мая</strong>
+                <span>СРЕДА</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="time">
+        <div class="container">
+          <div class="time__inner">
+            <h3 class="time__title title">
+              <span>Время</span>
+              Выберите
+            </h3>
+            <div class="time__info">
+              Укажите удобною для вас дату в графике выбранного эксперта
+            </div>
+            <ul class="time__list">
+              <li>
+                <span>00:15 01:15</span>
+              </li>
+              <li>
+                <span>01:25 - 02:25</span>
+              </li>
+              <li>
+                <span>02:35 - 03:35</span>
+              </li>
+              <li class="time-busy">
+                <span>03:45 - 04:45</span>
+              </li>
+              <li class="time-busy">
+                <span>04:55 - 05:55</span>
+              </li>
+              <li>
+                <span>06:05 - 07:05</span>
+              </li>
+              <li>
+                <span>07:15 - 08:15</span>
+              </li>
+              <li>
+                <span>08:25 - 09:25</span>
+              </li>
+              <li>
+                <span>09:35 - 10:35</span>
+              </li>
+              <li>
+                <span>10:45 - 11:45</span>
+              </li>
+              <li>
+                <span>11:55 - 12:55</span>
+              </li>
+              <li>
+                <span>13:05 - 14:05</span>
+              </li>
+              <li class="time-active">
+                <span>14:15 - 15:15</span>
+              </li>
+              <li>
+                <span>15:25 - 16:25</span>
+              </li>
+              <li>
+                <span>16:35 - 17:35</span>
+              </li>
+              <li>
+                <span>17:45 - 18:45</span>
+              </li>
+              <li>
+                <span>18:55 - 19:55</span>
+              </li>
+              <li>
+                <span>20:05 - 21:05</span>
+              </li>
+              <li>
+                <span>21:15 - 22:15</span>
+              </li>
+              <li class="time-busy">
+                <span>22:25 - 23:25</span>
+              </li>
+            </ul>
+            <div class="time__box">
+              <a href="#" class="time__btn btn">Быстрый заказ</a>
+              <a href="#" class="time__btn btn">Заказать услугу</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="card-review">
+        <div class="container">
+          <div class="card-review__wrap">
+            <h3 class="products-all-title title">
+              <span>Об эксперте</span>
+              Отзывы
+            </h3>
+            <span class="card-review__subtitle">Узнайте что говорят наши клиенты</span>
+            <div class="review-slider">
+              <div class="card-review__inner">
+                <ul class="card-review__list">
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Светлана
+                    </div>
+                    <span>15/06/2020</span>
+                    <p>
+                      Благодарю Вас за помощь. Дай Бог Вам здоровья и всех благ. Общение легкое, буду надеяться, что все
+                      образуется и наладится. Удачи Вам и счастья.
+                    </p>
+                  </li>
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Ирина
+                    </div>
+                    <span>05/02/2020</span>
+                    <p>
+                      Поговоришь по душам, как с лучшей подругой и на душе так легко! Спасибо Вам, за консультацию, за
+                      советы и за помощь! Как всегда, выше всяких похвал. Теперь знаешь, что если нужен совет, то только
+                      к Вам. Удачи Вам и терпения.
+                    </p>
+                  </li>
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Алина
+                    </div>
+                    <span>15/01/2020</span>
+                    <p>
+                      Spasibo vam ogromnoe. Uspokoili ochen, to сto skazali bilo ochen verno, nadeyus na luchshee i
+                      sbudetsa to, o chom vi skazali. Оgromnoe spasibo vam esho raz.
+                    </p>
+                  </li>
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Лена
+                    </div>
+                    <span>15/12/2019</span>
+                    <p>
+                      Разум мой не силен и не слишком глубок, чтобы замыслов божьих распутать клубок.Я молюсь и бога
+                      понять не пытаюсь - сущность бога способен постичь только бог.Сиана! Дай Бог Вам здоровья, Вы мой
+                      путеводитель и ангел хранитель, низкий Вам поклон и долгие лета!
+                    </p>
+                  </li>
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Екатерина
+                    </div>
+                    <span>05/02/2020</span>
+                    <p>
+                      Прогнозы всегда точные (плюс-минус один день - здесь уже роли не играет, но прогноз сбывается).
+                      Спасибо Вам.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-review__inner">
+                <ul class="card-review__list">
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Светлана
+                    </div>
+                    <span>15/06/2020</span>
+                    <p>
+                      Благодарю Вас за помощь. Дай Бог Вам здоровья и всех благ. Общение легкое, буду надеяться, что все
+                      образуется и наладится. Удачи Вам и счастья.
+                    </p>
+                  </li>
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Ирина
+                    </div>
+                    <span>05/02/2020</span>
+                    <p>
+                      Поговоришь по душам, как с лучшей подругой и на душе так легко! Спасибо Вам, за консультацию, за
+                      советы и за помощь! Как всегда, выше всяких похвал. Теперь знаешь, что если нужен совет, то только
+                      к Вам. Удачи Вам и терпения.
+                    </p>
+                  </li>
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Алина
+                    </div>
+                    <span>15/01/2020</span>
+                    <p>
+                      Spasibo vam ogromnoe. Uspokoili ochen, to сto skazali bilo ochen verno, nadeyus na luchshee i
+                      sbudetsa to, o chom vi skazali. Оgromnoe spasibo vam esho raz.
+                    </p>
+                  </li>
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Лена
+                    </div>
+                    <span>15/12/2019</span>
+                    <p>
+                      Разум мой не силен и не слишком глубок, чтобы замыслов божьих распутать клубок.Я молюсь и бога
+                      понять не пытаюсь - сущность бога способен постичь только бог.Сиана! Дай Бог Вам здоровья, Вы мой
+                      путеводитель и ангел хранитель, низкий Вам поклон и долгие лета!
+                    </p>
+                  </li>
+                  <li class="card-review__comment">
+                    <div class="card-review__name">
+                      Екатерина
+                    </div>
+                    <span>05/02/2020</span>
+                    <p>
+                      Прогнозы всегда точные (плюс-минус один день - здесь уже роли не играет, но прогноз сбывается).
+                      Спасибо Вам.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li>
+                <a class="pagination__btn-prev pagination__last" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.01" height="19.503" viewBox="0 0 20.01 19.503">
+                    <path id="arrow-right-solid"
+                      d="M8.508,38.956l.991-.991a1.067,1.067,0,0,1,1.514,0l8.682,8.677a1.067,1.067,0,0,1,0,1.514l-8.682,8.682a1.067,1.067,0,0,1-1.514,0l-.991-.991a1.073,1.073,0,0,1,.018-1.532l5.381-5.127H1.072A1.069,1.069,0,0,1,0,48.116V46.687a1.069,1.069,0,0,1,1.072-1.072H13.907L8.525,40.488A1.065,1.065,0,0,1,8.508,38.956Z"
+                      transform="translate(0 -37.65)" fill="#944ca2" />
+                  </svg>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><span class="active">3</span></li>
+              <li><span>...</span></li>
+              <li><a href="#">15</a></li>
+              <li>
+                <a class="pagination__btn-next" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.01" height="19.503" viewBox="0 0 20.01 19.503">
+                    <path id="arrow-right-solid"
+                      d="M8.508,38.956l.991-.991a1.067,1.067,0,0,1,1.514,0l8.682,8.677a1.067,1.067,0,0,1,0,1.514l-8.682,8.682a1.067,1.067,0,0,1-1.514,0l-.991-.991a1.073,1.073,0,0,1,.018-1.532l5.381-5.127H1.072A1.069,1.069,0,0,1,0,48.116V46.687a1.069,1.069,0,0,1,1.072-1.072H13.907L8.525,40.488A1.065,1.065,0,0,1,8.508,38.956Z"
+                      transform="translate(0 -37.65)" fill="#944ca2" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="leave-review">
+        <div class="container">
+          <div class="leave-review__inner">
+            <h3 class="leave-review__title title">
+              <span>Свой отзыв</span>
+              Оставить
+            </h3>
+            <span class="leave-review__subtitle">А что вы думаете об этом товаре?</span>
+            <form class="leave-review__form form">
+              <div class="leave-review__form-inner">
+                <div class="leave-review__input-wrap">
+                  <input name="full_name" type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="leave-review__input-wrap">
+                  <input name="email" type="email" placeholder="Ваш email" required>
+                </div>
+                <div class="leave-review__input-wrap">
+                  <input name="phone" type="text" placeholder="Ваш телефон" required>
+                </div>
+              </div>
+              <div class="leave-review__textarea-wrap">
+                <textarea name="review" placeholder="Ваш отзыв" required></textarea>
+              </div>
+              <div class="leave-review__box">
+                <span class="leave-review__check"></span>
+                <p>Я даю согласие на обработку персональных данных</p>
+              </div>
+              <button class="leave-review__btn btn">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="product" style="background-image: url('images/dest/content/product/productBG.png');">
+        <div class="container">
+          <div class="product__top">
+            <h3 class="product__title title">
+              <span>Приобрести</span>
+              Советуем
+            </h3>
+          </div>
+          <div class="product__inner">
+            <div class="product-all-slider">
+              <div class="product-card">
+                <div class="product-card__inner">
+                  <ul class="product-card__stickers">
+                    <li class="product-card__new">new</li>
+                  </ul>
+                  <div class="product-card__img">
+                    <img src="images/dest/content/sliders/product-1.png" alt="product">
+                  </div>
+                  <h3 class="product-card__title">
+                    Алтарный колокольчик
+                  </h3>
+                  <s class="product-card__sale">
+
+                  </s>
+                  <div class="product-card__price">
+                    385,00 грн
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="#" class="product-card__card">
+                      подробнее
+                    </a>
+                    <div href="#" class="product-card__like">
+
+                    </div>
+                    <a href="#" class="product-card__basket">
+                      <img src="images/dest/icons/basket.svg" alt="basket">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card__inner">
+                  <ul class="product-card__stickers">
+                    <li class="product-card__sales">sale</li>
+                    <li class="product-card__top">top</li>
+                  </ul>
+                  <div class="product-card__img">
+                    <img src="images/dest/content/sliders/product-2.png" alt="product">
+                  </div>
+                  <h3 class="product-card__title">
+                    Таро 7 Звёзд (Poisoncage Tarot)
+                  </h3>
+                  <s class="product-card__sale">
+                    450, 00 грн
+                  </s>
+                  <div class="product-card__price">
+                    385,00 грн
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="#" class="product-card__card">
+                      подробнее
+                    </a>
+                    <div href="#" class="product-card__like">
+
+                    </div>
+                    <a href="#" class="product-card__basket">
+                      <img src="images/dest/icons/basket.svg" alt="basket">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card__inner">
+                  <div class="product-card__img">
+                    <img src="images/dest/content/sliders/product-3.png" alt="product">
+                  </div>
+                  <h3 class="product-card__title">
+                    Магический талисман
+                  </h3>
+                  <s class="product-card__sale">
+
+                  </s>
+                  <div class="product-card__price">
+                    270,00 грн
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="#" class="product-card__card">
+                      подробнее
+                    </a>
+                    <div href="#" class="product-card__like">
+
+                    </div>
+                    <a href="#" class="product-card__basket">
+                      <img src="images/dest/icons/basket.svg" alt="basket">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card__inner">
+                  <ul class="product-card__stickers">
+                    <li class="product-card__top">top</li>
+                  </ul>
+                  <div class="product-card__img">
+                    <img src="images/dest/content/sliders/product-4.png" alt="product">
+                  </div>
+                  <h3 class="product-card__title">
+                    Алтарная статуэтка "Богиня Викки"
+                  </h3>
+                  <s class="product-card__sale">
+
+                  </s>
+                  <div class="product-card__price">
+                    1900, 00 грн
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="#" class="product-card__card">
+                      подробнее
+                    </a>
+                    <div href="#" class="product-card__like">
+
+                    </div>
+                    <a href="#" class="product-card__basket">
+                      <img src="images/dest/icons/basket.svg" alt="basket">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card__inner">
+                  <div class="product-card__img">
+                    <img src="images/dest/content/sliders/product-1.png" alt="product">
+                  </div>
+                  <h3 class="product-card__title">
+                    Алтарная статуэтка "Богиня Викки"
+                  </h3>
+                  <s class="product-card__sale">
+
+                  </s>
+                  <div class="product-card__price">
+                    1900, 00 грн
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="#" class="product-card__card">
+                      подробнее
+                    </a>
+                    <div href="#" class="product-card__like">
+
+                    </div>
+                    <a href="#" class="product-card__basket">
+                      <img src="images/dest/icons/basket.svg" alt="basket">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe" style="background-image: url('images/dest/content/subscribe/subscribeBG.png');">
+        <div class="container">
+          <div class="subscribe__inner">
+            <h3 class="subscribe__title title">
+              <span>Не забудьте</span>
+              Подписаться
+            </h3>
+            <p class="subscribe__subtitle">
+              Чтобы первыми узнать о новинках и акциях
+            </p>
+
+            <form class="subscribe__form form">
+              <div class="subscribe__form-inner">
+                <div class="subscribe__form-input-wrap">
+                  <input name="full_name" type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="subscribe__form-input-wrap">
+                  <input name="email" type="email" placeholder="Ваш email" required>
+                </div>
+                <button class="subscribe__btn btn">
+                  Подписаться
+                </button>
+              </div>
+              <div class="subscribe__box">
+                <span class="subscribe__check"></span>
+                <p>Я даю согласие на обработку персональных данных</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__logo">
+            <img src="images/dest/content/logo.png" alt="logo">
+          </a>
+          <ul class="footer__list">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Эксперты</a>
+            </li>
+            <li>
+              <a href="#">Услуги</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+          <a href="#" class="footer__user btn btn--user">
+            <span>
+              <img src="images/dest/icons/user.svg" alt="user">
+            </span>
+            Личный кабинет
+          </a>
+          <ul class="footer__social social">
+            <li>
+              <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                  <g id="_179319" data-name="179319" transform="translate(0.5 0.5)">
+                    <path id="Контур_34" data-name="Контур 34" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z" fill="none"
+                      stroke="#fff" stroke-width="1" />
+                    <path id="Контур_35" data-name="Контур 35"
+                      d="M115.626,75.132h2.245V72.547h-2.639v.009c-3.2.088-3.854,1.489-3.911,2.961h-.007v1.291h-2.178v2.531h2.178v6.785H114.6V79.339h2.688l.519-2.531H114.6v-.78A.946.946,0,0,1,115.626,75.132Z"
+                      transform="translate(-98.504 -64.368)" fill="#fff" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                  <g id="instagram" transform="translate(0.5 0.5)">
+                    <path id="Контур_36" data-name="Контур 36"
+                      d="M213.508,210.254A3.254,3.254,0,1,1,210.254,207,3.254,3.254,0,0,1,213.508,210.254Zm0,0"
+                      transform="translate(-195.254 -195.254)" fill="none" stroke="#fff" stroke-width="1" />
+                    <path id="Контур_37" data-name="Контур 37"
+                      d="M151.1,137.734a3.233,3.233,0,0,0-1.853-1.853,5.4,5.4,0,0,0-1.812-.336c-1.03-.047-1.338-.057-3.945-.057s-2.915.01-3.945.057a5.4,5.4,0,0,0-1.812.336,3.234,3.234,0,0,0-1.853,1.853,5.4,5.4,0,0,0-.336,1.813c-.047,1.029-.057,1.338-.057,3.945s.01,2.915.057,3.945a5.4,5.4,0,0,0,.336,1.812,3.233,3.233,0,0,0,1.853,1.853,5.394,5.394,0,0,0,1.813.336c1.029.047,1.338.057,3.944.057s2.916-.01,3.945-.057a5.394,5.394,0,0,0,1.813-.336,3.233,3.233,0,0,0,1.853-1.853,5.405,5.405,0,0,0,.336-1.812c.047-1.03.057-1.338.057-3.945s-.01-2.915-.057-3.945A5.394,5.394,0,0,0,151.1,137.734Zm-7.61,10.77a5.013,5.013,0,1,1,5.013-5.013A5.013,5.013,0,0,1,143.488,148.5Zm5.211-9.052a1.171,1.171,0,1,1,1.171-1.171A1.171,1.171,0,0,1,148.7,139.452Zm0,0"
+                      transform="translate(-128.488 -128.491)" fill="none" stroke="#8374d5" stroke-width="1" />
+                    <path id="Контур_38" data-name="Контур 38"
+                      d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.561,18.551a6.319,6.319,0,0,1-.4,2.091,4.4,4.4,0,0,1-2.519,2.519,6.324,6.324,0,0,1-2.091.4c-.919.042-1.212.052-3.551.052s-2.633-.01-3.551-.052a6.324,6.324,0,0,1-2.091-.4,4.4,4.4,0,0,1-2.519-2.519,6.318,6.318,0,0,1-.4-2.091C6.4,17.633,6.387,17.339,6.387,15s.01-2.633.052-3.551a6.32,6.32,0,0,1,.4-2.091A4.407,4.407,0,0,1,9.358,6.839a6.325,6.325,0,0,1,2.091-.4c.919-.042,1.212-.052,3.551-.052s2.633.01,3.551.052a6.327,6.327,0,0,1,2.091.4,4.405,4.405,0,0,1,2.519,2.519,6.319,6.319,0,0,1,.4,2.091c.042.919.052,1.212.052,3.551S23.6,17.633,23.561,18.551Zm0,0"
+                      fill="none" stroke="#fff" stroke-width="1" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p>EZOMIR © Copyright 2020. Разработано компанией SFdevelop</p>
+            <ul>
+              <li>
+                <img src="images/dest/content/footer/visa.jpg" alt="visa">
+              </li>
+              <li>
+                <img src="images/dest/content/footer/master.jpg" alt="mastercard">
+              </li>
+            </ul>
+            <a href="#" class="footer__politic">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/flipclock.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

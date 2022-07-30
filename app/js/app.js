@@ -262,9 +262,37 @@ $(function () {
     }
   });
 
+  $(".expert-card__btn").on("click", function () {
+    $(".expert-card__right").addClass("show");
+  });
 
-
-
+  $('.expert-service-slider').slick({
+    prevArrow: '<button class="next"><svg xmlns="http://www.w3.org/2000/svg" width="20.01" height="19.503" viewBox="0 0 20.01 19.503"><path id="arrow-right-solid" d="M8.508,38.956l.991-.991a1.067,1.067,0,0,1,1.514,0l8.682,8.677a1.067,1.067,0,0,1,0,1.514l-8.682,8.682a1.067,1.067,0,0,1-1.514,0l-.991-.991a1.073,1.073,0,0,1,.018-1.532l5.381-5.127H1.072A1.069,1.069,0,0,1,0,48.116V46.687a1.069,1.069,0,0,1,1.072-1.072H13.907L8.525,40.488A1.065,1.065,0,0,1,8.508,38.956Z" transform="translate(0 -37.65)" fill="#944ca2"/></svg></button>',
+    nextArrow: '<button class="prev"><svg xmlns="http://www.w3.org/2000/svg" width="20.01" height="19.503" viewBox="0 0 20.01 19.503"><path id="arrow-right-solid" d="M8.508,38.956l.991-.991a1.067,1.067,0,0,1,1.514,0l8.682,8.677a1.067,1.067,0,0,1,0,1.514l-8.682,8.682a1.067,1.067,0,0,1-1.514,0l-.991-.991a1.073,1.073,0,0,1,.018-1.532l5.381-5.127H1.072A1.069,1.069,0,0,1,0,48.116V46.687a1.069,1.069,0,0,1,1.072-1.072H13.907L8.525,40.488A1.065,1.065,0,0,1,8.508,38.956Z" transform="translate(0 -37.65)" fill="#944ca2"/></svg></button>',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 901,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 469,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });
 
 
 });

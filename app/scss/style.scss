@@ -296,6 +296,73 @@
       height: 215px;
     }
   }
+
+  &--service {
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    .experts__title {
+      color: #0D030E;
+
+      span {
+        top: 14px;
+        right: 3px;
+      }
+    }
+
+    .experts-service__info {
+      margin: 10px 0 10px;
+    }
+
+    .experts-service__inner {
+      padding: 35px 35px 25px 35px;
+      background-color: #fff;
+    }
+
+    .experts__inner::before {
+      display: none;
+    }
+
+    .card {
+      border: 3px solid transparent;
+
+      &:hover {
+        border-color: #944CA2;
+      }
+    }
+
+    .card__name {
+      color: #0D030E;
+    }
+
+    .card__btn {
+      color: #944CA2;
+    }
+
+    .card__img {
+      margin: 0 0 25px 0;
+      height: 388px;
+    }
+
+    .card__btn {
+      display: block;
+      margin: 0 0 15px 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .slider-experts .next {
+      right: 46px;
+      top: -117px;
+    }
+
+    .prev {
+      top: -114px;
+      right: 10px;
+    }
+  }
 }
 
 /*end experts===========*/
@@ -767,7 +834,7 @@
   &__list {
     display: flex;
     justify-content: flex-start;
-    margin: 0 0 115px -15px;
+    margin: 0 0 30px -15px;
     flex-wrap: wrap;
 
     li {
@@ -793,8 +860,7 @@
   }
 
   &__left {
-    max-width: 420px;
-    width: 100%;
+    width: 420px;
   }
 
   .slider-card__top-item {
@@ -830,6 +896,8 @@
   }
 
   &__right {
+    max-width: 985px;
+    width: 100%;
     padding: 19px 37px 40px 25px;
     background-color: #fff;
     margin: 0 0 0 15px;
@@ -1226,8 +1294,6 @@
   background-size: 80%;
   background-position: -24% 71%;
 
-  &__inner {}
-
   &__img {
     margin: 0 0 30px 0;
     height: 532px;
@@ -1253,10 +1319,394 @@
 
 /*end about==================*/
 
+/*start service-experts*/
+.service-experts {
+  margin: 13px 0 20px;
+
+  &__img {
+    margin: 0 0 30px 0;
+    height: 530px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__box {
+    padding: 37px 37px 40px 37px;
+    background-color: #fff;
+  }
+
+  &__line {
+    margin: 0 0 10px 0;
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: #944CA2;
+  }
+
+  h3 {
+    margin: 0 0 24px 0;
+    font-family: 'Caviar Dreams';
+    font-size: 30px;
+    font-style: italic;
+  }
+
+  p {
+    margin: 0 0 55px 0;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__price {
+    font-size: 40px;
+    font-family: 'Caviar Dreams';
+  }
+}
+
+/*end service-experts*/
+
+/*start service-experts===========*/
+.date {
+  margin: 0 0 20px 0;
+
+  &__inner {
+    padding: 59px 24px 10px 52px;
+    background-color: #fff;
+  }
+
+  &__title {
+    color: #0D030E;
+
+    span {
+      right: 82px;
+      top: 13px;
+    }
+  }
+
+  &__info {
+    margin: -6px 0 22px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 0 -15px;
+    flex-wrap: wrap;
 
 
+    li {
+      padding: 10px 10px 10px 10px;
+      align-items: center;
+      flex-basis: calc(14.2857142% - 15px);
+      margin: 0 0 15px 15px;
+      border: 1px solid #944CA2;
+      cursor: pointer;
+    }
 
+    strong {
+      display: block;
+      font-size: 23px;
+      line-height: 25px;
+      text-transform: inherit;
+      text-align: center;
+      font-weight: 500;
+    }
 
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 25px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    li.date-active {
+      color: #fff;
+      background-color: #944CA2;
+    }
+
+    li.date-busy {
+      pointer-events: none;
+      color: #fff;
+      background-color: #DDDDDD;
+      border: 1px solid #DDDDDD;
+    }
+  }
+}
+
+.time {
+  margin: 0 0 20px 0;
+
+  &__inner {
+    padding: 36px 24px 47px 39px;
+    background-color: #fff;
+  }
+
+  &__title {
+    color: #0D030E;
+
+    span {
+      display: block;
+      right: 72px;
+      top: 13px;
+    }
+  }
+
+  &__info {
+    margin: -6px 0 22px;
+  }
+
+  &__list {
+    padding: 10px 5px 12px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 45px -15px;
+    flex-wrap: wrap;
+    border: 1px solid #944CA2;
+
+    li {
+      padding: 10px 10px 10px 10px;
+      align-items: center;
+      flex-basis: calc(11.11111% - 15px);
+      margin: 0 0 5px 15px;
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      span {
+        display: block;
+        text-align: center;
+      }
+
+      &:hover {
+        border: 1px solid #944CA2;
+      }
+
+      span {
+        white-space: nowrap;
+      }
+    }
+
+    li.time-busy {
+      pointer-events: none;
+      color: #D3CAFF;
+    }
+
+    li.time-active {
+      color: #fff;
+      background-color: #944CA2;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__btn:first-child {
+    margin: 0 35px 0 0;
+    background-image: linear-gradient(to bottom, #D3CAFF 0%, #8374D5 50%, #8374D5 100%);
+
+    &:hover {
+      background-position: bottom center;
+    }
+  }
+}
+
+/*end service-experts===========*/
+
+/*start expert-card==============*/
+.expert-card {
+  margin: 10px 0 30px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 560px;
+    max-width: 560px;
+    height: 555px;
+    background: radial-gradient(circle, #ddbae8 0%, #ffffff 0%, #ddbae8 100%);
+
+    img {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+  }
+
+  &__right {
+    padding: 20px 28px 10px 30px;
+    margin: 0 0 0 15px;
+    background-color: #fff;
+    max-width: 840px;
+    width: 100%;
+  }
+
+  &__right.show {
+    .expert-card__text::before {
+      display: none;
+    }
+
+    .expert-card__btn {
+      display: none;
+    }
+
+    .expert-card__text {
+      max-height: 100%;
+    }
+
+    .expert-card__bottom {
+      margin: 45px 0 30px 0;
+    }
+  }
+
+  &__name {
+    font-family: 'Caviar Dreams';
+    margin: 0 0 8px 0;
+    font-size: 50px;
+    line-height: 53px;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  &__info {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    line-height: 19px;
+    color: #944CA2;
+  }
+
+  &__text {
+    margin: 0 0 5px 0;
+    position: relative;
+    max-height: 322px;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 70px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 100%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom center;
+    }
+  }
+
+  p {
+    margin: 0 0 25px 0;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__btn {
+    display: block;
+    margin-left: auto;
+    font-size: 19px;
+    line-height: 100%;
+    color: #944CA2;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  &__bottom {
+    margin: 45px 0 0 0;
+    display: flex;
+
+    strong {
+      display: block;
+      color: #944CA2;
+    }
+
+    span {
+      margin: 0 0 0 25px;
+      display: block;
+    }
+  }
+}
+
+.expert-service {
+  margin: 0 0 20px 0;
+
+  &__inner {
+    padding: 35px 10px 35px 30px;
+
+    background-color: #fff;
+  }
+
+  &__title {
+    color: #0D030E;
+
+    span {
+      top: 15px;
+      right: -45px;
+    }
+  }
+
+  &__info {
+    margin: 10px 0 30px;
+  }
+
+  .slick-slide {
+    margin: 0 10px;
+  }
+
+  .card-universal__img {
+    margin: 0 0 15px 0;
+    height: 275px;
+  }
+
+  .card-universal__title {
+    margin: 0 0 23px 0;
+    height: 55px;
+  }
+
+  .card-universal p {
+    margin: 0 0 52px 0;
+    max-width: 390px;
+    font-size: 18px;
+    line-height: 25px;
+    height: 145px;
+  }
+
+  .card-universal {
+    border: 3px solid transparent;
+
+    &:hover {
+      border-color: #944CA2;
+    }
+  }
+  .card-universal__link:hover{
+    text-decoration: underline;
+  }
+  .next {
+    right: 46px;
+    top: -117px;
+  }
+
+  .prev {
+    top: -114px;
+    right: 10px;
+  }
+}
+
+/*end expert-card==============*/
 
 
 
