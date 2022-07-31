@@ -1,0 +1,9 @@
+<svg id="facebook-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.75" height="31.75" viewBox="0 0 31.75 31.75">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e978ff"/>
+      <stop offset="1" stop-color="#944ca2"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_66" data-name="Контур 66" d="M15.875,0A15.875,15.875,0,1,0,31.75,15.875,15.875,15.875,0,0,0,15.875,0Zm6.056,8.084h-2.2c-1.722,0-2.055.818-2.055,2.019v2.647h4.106l0,4.146h-4.1v10.64H13.4V16.9H9.819V12.751H13.4V9.694c0-3.549,2.168-5.481,5.333-5.481l3.2,0V8.084Z" fill="url(#linear-gradient)"/>
+</svg>

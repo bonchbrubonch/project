@@ -193,6 +193,9 @@ $(function () {
   $(".leave-review__box").on("click", function () {
     $(".leave-review__form").toggleClass("active");
   });
+  $(".contacts__box").on("click", function () {
+    $(".contacts__form").toggleClass("active");
+  });
 
   $(".header__menu-btn").on("click", function () {
     $(".header__menu-btn").toggleClass("active");
@@ -225,42 +228,6 @@ $(function () {
       focusOnSelect: true,
     });
   }
-
-  $(".form").validate({
-    errorElement: "span",
-    rules: {
-      full_name: {
-        required: true,
-        minlength: 3
-      },
-      email: {
-        required: true,
-        email: true
-      },
-      phone: {
-        required: true,
-      },
-      review: {
-        minlength: 5,
-        required: true,
-      },
-
-    },
-    messages: {
-      full_name: {
-        required: 'Введите имя*'
-      },
-      email: {
-        required: 'Введите почту*'
-      },
-      phone: {
-        required: 'Введите номер телефона*'
-      },
-      review: {
-        required: 'Оставьте отзыв*'
-      },
-    }
-  });
 
   $(".expert-card__btn").on("click", function () {
     $(".expert-card__right").addClass("show");
