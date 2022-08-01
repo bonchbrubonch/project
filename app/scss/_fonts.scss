@@ -13,6 +13,7 @@
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: 'Exo2';
   src: url('../fonts/exo2medium.woff2') format('woff2'),
@@ -36,6 +37,7 @@
   font-style: normal;
   font-weight: 700;
 }
+
 @font-face {
   font-family: 'Caviar Dreams';
   src: url('../fonts/caviardreamsbolditalic.woff2') format('woff2'),
@@ -46,8 +48,9 @@
 
 @font-face {
   font-family: 'Corinthia';
-  src: url('../fonts/Corinthia.woff2') format('woff2'),
-    url('../fonts/Corinthia.woff') format('woff');
+  src: url('../fonts/corinthia.ttf') format('truetype'),
+    url('../fonts/corinthia.woff') format('woff'),
+    url('../fonts/corinthia.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
 }

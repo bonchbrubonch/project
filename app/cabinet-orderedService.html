@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content" style="background-image: url('images/dest/content/page-bg.png');">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#" class="header__logo">
+              <img src="images/dest/content/logo.png" alt="logo">
+            </a>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li>
+                  <a href="#">Главная</a>
+                </li>
+                <li>
+                  <a href="#">О нас</a>
+                </li>
+                <li>
+                  <a href="#">Эксперты</a>
+                </li>
+                <li>
+                  <a href="#">Услуги</a>
+                </li>
+                <li>
+                  <a href="#">Магазин</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+                <ul class="header__social social">
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                        <g id="_179319" data-name="179319" transform="translate(0.5 0.5)">
+                          <path id="Контур_34" data-name="Контур 34" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z"
+                            fill="none" stroke="#8374d5" stroke-width="1" />
+                          <path id="Контур_35" data-name="Контур 35"
+                            d="M115.626,75.132h2.245V72.547h-2.639v.009c-3.2.088-3.854,1.489-3.911,2.961h-.007v1.291h-2.178v2.531h2.178v6.785H114.6V79.339h2.688l.519-2.531H114.6v-.78A.946.946,0,0,1,115.626,75.132Z"
+                            transform="translate(-98.504 -64.368)" fill="#8374d5" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                        <g id="instagram" transform="translate(0.5 0.5)">
+                          <path id="Контур_36" data-name="Контур 36"
+                            d="M213.508,210.254A3.254,3.254,0,1,1,210.254,207,3.254,3.254,0,0,1,213.508,210.254Zm0,0"
+                            transform="translate(-195.254 -195.254)" fill="none" stroke="#8374d5" stroke-width="1" />
+                          <path id="Контур_37" data-name="Контур 37"
+                            d="M151.1,137.734a3.233,3.233,0,0,0-1.853-1.853,5.4,5.4,0,0,0-1.812-.336c-1.03-.047-1.338-.057-3.945-.057s-2.915.01-3.945.057a5.4,5.4,0,0,0-1.812.336,3.234,3.234,0,0,0-1.853,1.853,5.4,5.4,0,0,0-.336,1.813c-.047,1.029-.057,1.338-.057,3.945s.01,2.915.057,3.945a5.4,5.4,0,0,0,.336,1.812,3.233,3.233,0,0,0,1.853,1.853,5.394,5.394,0,0,0,1.813.336c1.029.047,1.338.057,3.944.057s2.916-.01,3.945-.057a5.394,5.394,0,0,0,1.813-.336,3.233,3.233,0,0,0,1.853-1.853,5.405,5.405,0,0,0,.336-1.812c.047-1.03.057-1.338.057-3.945s-.01-2.915-.057-3.945A5.394,5.394,0,0,0,151.1,137.734Zm-7.61,10.77a5.013,5.013,0,1,1,5.013-5.013A5.013,5.013,0,0,1,143.488,148.5Zm5.211-9.052a1.171,1.171,0,1,1,1.171-1.171A1.171,1.171,0,0,1,148.7,139.452Zm0,0"
+                            transform="translate(-128.488 -128.491)" fill="none" stroke="#8374d5" stroke-width="1" />
+                          <path id="Контур_38" data-name="Контур 38"
+                            d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.561,18.551a6.319,6.319,0,0,1-.4,2.091,4.4,4.4,0,0,1-2.519,2.519,6.324,6.324,0,0,1-2.091.4c-.919.042-1.212.052-3.551.052s-2.633-.01-3.551-.052a6.324,6.324,0,0,1-2.091-.4,4.4,4.4,0,0,1-2.519-2.519,6.318,6.318,0,0,1-.4-2.091C6.4,17.633,6.387,17.339,6.387,15s.01-2.633.052-3.551a6.32,6.32,0,0,1,.4-2.091A4.407,4.407,0,0,1,9.358,6.839a6.325,6.325,0,0,1,2.091-.4c.919-.042,1.212-.052,3.551-.052s2.633.01,3.551.052a6.327,6.327,0,0,1,2.091.4,4.405,4.405,0,0,1,2.519,2.519,6.319,6.319,0,0,1,.4,2.091c.042.919.052,1.212.052,3.551S23.6,17.633,23.561,18.551Zm0,0"
+                            fill="none" stroke="#8374d5" stroke-width="1" />
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </nav>
+            <div class="header__info">
+              <a href="#" class="header__user btn btn--user">
+                <span>
+                  <picture class="slider__img">
+                    <source srcset="images/dest/icons/user-2.svg" media="(max-width:1300px)">
+                    <img src="images/dest/icons/user.svg" alt="user">
+                  </picture>
+                </span>
+                Личный кабинет
+              </a>
+              <a href="#" class="header__basket">
+                <img src="images/dest/icons/basket.svg" alt="shop">
+                <span>3</span>
+              </a>
+              <button class="header__menu-btn">
+                <span class="header__menu-line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="title-wrap">
+          <h1 class="cabinet-title title">
+            <span>Кабинет</span>
+            Личный
+          </h1>
+        </div>
+      </div>
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li><a href="#">Главная</a></li>
+              <li><span>Услуги заказанные</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cabinet">
+        <div class="container">
+          <div class="cabinet__inner">
+            <div class="cabinet__left">
+              <h3 class="title">
+                <span>Кабинет</span>
+                Меню
+              </h3>
+              <button class="cabinet__left-btn">
+                <img src="images/dest/icons/close.svg" alt="close">
+              </button>
+              <ul class="cabinet__menu">
+                <li>
+                  <a href="#">
+                    <svg id="Сгруппировать_183" data-name="Сгруппировать 183" xmlns="http://www.w3.org/2000/svg"
+                      width="20.929" height="20.929" viewBox="0 0 20.929 20.929">
+                      <path id="Контур_147" data-name="Контур 147"
+                        d="M17.864,13.529a10.424,10.424,0,0,0-3.976-2.494,6.05,6.05,0,1,0-6.846,0A10.481,10.481,0,0,0,0,20.929H1.635a8.829,8.829,0,1,1,17.659,0h1.635A10.4,10.4,0,0,0,17.864,13.529Zm-7.4-3.065A4.415,4.415,0,1,1,14.879,6.05,4.42,4.42,0,0,1,10.464,10.464Z"
+                        transform="translate(0)" fill="#170735" />
+                    </svg>
+                    <span>Личные данные</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21.211" height="21.939" viewBox="0 0 21.211 21.939">
+                      <g id="check-list" transform="translate(-8.5)">
+                        <path id="Контур_136" data-name="Контур 136"
+                          d="M29.068,10.8H26.926v-.96A2.53,2.53,0,0,0,25,7.395V.643A.643.643,0,0,0,24.355,0H9.143A.643.643,0,0,0,8.5.643V18.254a.643.643,0,0,0,.643.643h9.9v.527a2.52,2.52,0,0,0,2.52,2.516h5.631a2.52,2.52,0,0,0,2.52-2.516V11.441a.643.643,0,0,0-.643-.643Zm-3.428-.96v.96H23.112v-.96a1.264,1.264,0,0,1,2.528,0ZM9.786,17.612V1.286H23.712V7.406a2.529,2.529,0,0,0-1.885,2.432v.96H19.684a.643.643,0,0,0-.643.643v6.17Zm18.64,1.812a1.234,1.234,0,0,1-1.234,1.23H21.561a1.234,1.234,0,0,1-1.234-1.23v-7.34h1.5v1.693a.643.643,0,1,0,1.286,0V12.084H25.64v1.693a.643.643,0,1,0,1.286,0V12.084h1.5Z"
+                          transform="translate(0 0)" fill="#0d030e" />
+                        <path id="Контур_137" data-name="Контур 137"
+                          d="M70.424,60.205l-.731.786-.049-.061a.643.643,0,0,0-1,.806l.515.641a.644.644,0,0,0,.478.24h.023a.644.644,0,0,0,.471-.205l1.238-1.33a.643.643,0,0,0-.942-.877Z"
+                          transform="translate(-57.425 -57.426)" fill="#0d030e" />
+                        <path id="Контур_138" data-name="Контур 138"
+                          d="M170.144,76.787h5.748a.643.643,0,0,0,0-1.287h-5.748a.643.643,0,1,0,0,1.287Z"
+                          transform="translate(-154.105 -72.155)" fill="#0d030e" />
+                        <path id="Контур_139" data-name="Контур 139"
+                          d="M70.424,151.205l-.731.786-.049-.061a.643.643,0,0,0-1,.806l.515.641a.644.644,0,0,0,.478.24h.023a.644.644,0,0,0,.471-.2l1.238-1.33a.643.643,0,0,0-.942-.877Z"
+                          transform="translate(-57.425 -144.531)" fill="#0d030e" />
+                        <path id="Контур_140" data-name="Контур 140"
+                          d="M170.143,167.787h3.6a.643.643,0,1,0,0-1.287h-3.6a.643.643,0,1,0,0,1.287Z"
+                          transform="translate(-154.103 -159.366)" fill="#0d030e" />
+                        <path id="Контур_141" data-name="Контур 141"
+                          d="M70.424,242.205l-.731.786-.049-.061a.643.643,0,0,0-1,.806l.515.641a.644.644,0,0,0,.478.24h.023a.644.644,0,0,0,.471-.205l1.238-1.33a.643.643,0,0,0-.942-.877Z"
+                          transform="translate(-57.425 -231.632)" fill="#0d030e" />
+                        <path id="Контур_142" data-name="Контур 142"
+                          d="M171.216,257.5h-1.072a.643.643,0,1,0,0,1.287h1.072a.643.643,0,1,0,0-1.287Z"
+                          transform="translate(-154.102 -246.467)" fill="#0d030e" />
+                      </g>
+                    </svg>
+                    <span>Товари заказанные</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22.014" height="24.503" viewBox="0 0 22.014 24.503">
+                      <path id="Контур_161" data-name="Контур 161"
+                        d="M43.45,17.4l-2.275-.758-.817-1.633a5.242,5.242,0,0,0,1.419-2.773l.1-.61h.871a1.437,1.437,0,0,0,1.436-1.436V7.179a7.179,7.179,0,1,0-14.357,0v3.015a1.438,1.438,0,0,0,.957,1.353v.561a1.437,1.437,0,0,0,1.436,1.436h.42a5.192,5.192,0,0,0,.8,1.243c.068.078.138.153.211.227l-.816,1.632-2.275.758A7.054,7.054,0,0,0,26,24.024a.479.479,0,0,0,.479.479H47.536a.479.479,0,0,0,.479-.479A7.054,7.054,0,0,0,43.45,17.4Zm-.221-7.21a.479.479,0,0,1-.479.479h-.73c.122-.942.2-1.945.235-2.933,0-.028,0-.055,0-.082h.971Zm-11.964.479a.479.479,0,0,1-.479-.479V7.657h.971q0,.075.005.151v.005h0c.034.961.114,1.937.232,2.859h-.731Zm.957,1.914a.479.479,0,0,1-.479-.479v-.479h.392l.1.611c.019.116.043.232.071.347ZM31.744,6.7H30.8a6.222,6.222,0,0,1,12.406,0h-.94a4.847,4.847,0,0,0-4.835-4.786h-.857A4.847,4.847,0,0,0,31.744,6.7Zm4.835-3.829h.857a3.891,3.891,0,0,1,3.879,3.9c0,.151,0,.282,0,.4,0,0,0,0,0,0l-.6-.086a7.69,7.69,0,0,1-4.323-2.162.479.479,0,0,0-.338-.14,4.33,4.33,0,0,0-3.329,1.575A3.89,3.89,0,0,1,36.579,2.871ZM33.3,12.586a27.355,27.355,0,0,1-.574-4.645l.644-.859a3.369,3.369,0,0,1,2.491-1.335,8.656,8.656,0,0,0,4.716,2.287l.7.1c-.047,1-.143,2-.281,2.925h0c-.044.3-.078.487-.167,1.02a4.065,4.065,0,0,1-2.885,3.269,3.765,3.765,0,0,1-4.227-1.808H34.7a1.438,1.438,0,0,0,1.353.957h.957a1.436,1.436,0,1,0,0-2.871H36.05a1.436,1.436,0,0,0-1.354.957Zm2.71,3.734a4.8,4.8,0,0,0,1.78.04l-.846.894Zm.276,1.63-1.518,1.605A18.236,18.236,0,0,1,33.7,17.071l.57-1.14Zm3.38-2.182.651,1.3a18.228,18.228,0,0,1-1.072,2.485l-1.625-1.625Zm-4.095-2.7a.479.479,0,0,1,.479-.479h.957a.479.479,0,1,1,0,.957H36.05A.479.479,0,0,1,35.571,13.065Zm-8.6,10.481a6.048,6.048,0,0,1,3.891-5.234l2.014-.671A19.185,19.185,0,0,0,34.244,20.6l0,0h0a19.19,19.19,0,0,0,1.31,2l.589.945Zm10.031-.427-.649-1.042q-.011-.018-.023-.034a18.246,18.246,0,0,1-1.078-1.611l1.707-1.8,1.8,1.8a18.227,18.227,0,0,1-1.082,1.617C37.656,22.074,37.689,22.025,37.007,23.119Zm.862.427.589-.945a19.182,19.182,0,0,0,1.319-2.016l.007-.013v0a19.169,19.169,0,0,0,1.348-2.929l2.014.671a6.048,6.048,0,0,1,3.891,5.234H37.869Z"
+                        transform="translate(-26 0)" fill="#0d030e" />
+                    </svg>
+                    <span>Услуги заказанные</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20.35" viewBox="0 0 22 20.35">
+                      <g id="wallet" transform="translate(0 -19.098)">
+                        <path id="Контур_159" data-name="Контур 159"
+                          d="M19.987,23.768h-.274V21.11A2.014,2.014,0,0,0,17.7,19.1H3.108A3.111,3.111,0,0,0,.016,21.9C-.007,22.012,0,21.023,0,36.342a3.11,3.11,0,0,0,3.107,3.107h16.88A2.014,2.014,0,0,0,22,37.436V25.781a2.014,2.014,0,0,0-2.012-2.012ZM3.108,20.48H17.7a.631.631,0,0,1,.63.63v2.658H3.108a1.646,1.646,0,1,1,0-3.288Zm16.88,17.586H3.108a1.726,1.726,0,0,1-1.725-1.725V24.627a3.089,3.089,0,0,0,1.725.524h16.88a.631.631,0,0,1,.63.63v2.8h-5.2a3.212,3.212,0,1,0,0,6.424h5.2v2.43a.631.631,0,0,1-.63.63Zm.63-4.442h-5.2a1.83,1.83,0,1,1,0-3.66h5.2Z"
+                          transform="translate(0)" fill="#0d030e" />
+                        <circle id="Эллипс_49" data-name="Эллипс 49" cx="1.001" cy="1.001" r="1.001"
+                          transform="translate(14.671 30.793)" />
+                      </g>
+                    </svg>
+                    <span>Мой баланс</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19.573" viewBox="0 0 22 19.573">
+                      <path id="_1077035" data-name="1077035"
+                        d="M11,19.573a1.29,1.29,0,0,1-.85-.32c-.889-.777-1.746-1.507-2.5-2.152l0,0a46.523,46.523,0,0,1-5.462-5.127A8.189,8.189,0,0,1,0,6.612a6.876,6.876,0,0,1,1.745-4.7A5.916,5.916,0,0,1,6.146,0,5.534,5.534,0,0,1,9.6,1.193,7.072,7.072,0,0,1,11,2.653a7.073,7.073,0,0,1,1.4-1.459A5.534,5.534,0,0,1,15.854,0a5.916,5.916,0,0,1,4.4,1.915A6.876,6.876,0,0,1,22,6.612a8.188,8.188,0,0,1-2.182,5.36A46.518,46.518,0,0,1,14.357,17.1c-.757.645-1.616,1.377-2.506,2.156a1.291,1.291,0,0,1-.85.319ZM6.146,1.289a4.641,4.641,0,0,0-3.453,1.5,5.593,5.593,0,0,0-1.4,3.823,6.89,6.89,0,0,0,1.886,4.538A45.782,45.782,0,0,0,8.48,16.118l0,0c.759.647,1.619,1.38,2.514,2.163.9-.784,1.762-1.519,2.523-2.166a45.794,45.794,0,0,0,5.305-4.968,6.89,6.89,0,0,0,1.885-4.538,5.593,5.593,0,0,0-1.4-3.823,4.641,4.641,0,0,0-3.453-1.5,4.274,4.274,0,0,0-2.668.924A6.253,6.253,0,0,0,11.7,3.933a.813.813,0,0,1-1.4,0A6.248,6.248,0,0,0,8.814,2.213a4.274,4.274,0,0,0-2.668-.924Zm0,0"
+                        transform="translate(0 0)" fill="#0d030e" />
+                    </svg>
+                    <span>Избранное товары</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17.6" viewBox="0 0 22 17.6">
+                      <path id="Контур_70" data-name="Контур 70"
+                        d="M141.267,144H120.733a.733.733,0,0,0-.733.733v16.133a.733.733,0,0,0,.733.733h20.533a.733.733,0,0,0,.733-.733V144.733A.733.733,0,0,0,141.267,144Zm-1.98,1.467-8.286,7.1-8.287-7.1Zm-17.82,14.667V146.328l9.056,7.762a.733.733,0,0,0,.953,0l9.057-7.762v13.806Zm0,0"
+                        transform="translate(-120 -144)" fill="#170735" />
+                    </svg>
+                    <span>Написать сообщение</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21.999" viewBox="0 0 22 21.999">
+                      <g id="logout" transform="translate(0 -0.008)">
+                        <path id="Контур_148" data-name="Контур 148"
+                          d="M286.728,209.383h-8.708a.687.687,0,0,1,0-1.375h8.708a.687.687,0,0,1,0,1.375Zm0,0"
+                          transform="translate(-265.416 -199.063)" fill="#0d030e" />
+                        <path id="Контур_149" data-name="Контур 149"
+                          d="M400.691,136.221a.688.688,0,0,1-.486-1.174l2.952-2.951-2.952-2.952a.688.688,0,1,1,.973-.972l3.437,3.437a.688.688,0,0,1,0,.972l-3.437,3.437A.683.683,0,0,1,400.691,136.221Zm0,0"
+                          transform="translate(-382.817 -122.464)" fill="#0d030e" />
+                        <path id="Контур_150" data-name="Контур 150"
+                          d="M7.333,22.007a1.889,1.889,0,0,1-.568-.085L1.248,20.084A1.85,1.85,0,0,1,0,18.341V1.841A1.835,1.835,0,0,1,1.833.008,1.891,1.891,0,0,1,2.4.093L7.918,1.931A1.85,1.85,0,0,1,9.166,3.674v16.5a1.835,1.835,0,0,1-1.833,1.833ZM1.833,1.383a.46.46,0,0,0-.458.458v16.5a.476.476,0,0,0,.318.442l5.491,1.83a.5.5,0,0,0,.15.02.46.46,0,0,0,.458-.458V3.674a.476.476,0,0,0-.318-.442L1.982,1.4a.5.5,0,0,0-.149-.02Zm0,0"
+                          transform="translate(0 0)" fill="#0d030e" />
+                        <path id="Контур_151" data-name="Контур 151"
+                          d="M39.5,7.341a.688.688,0,0,1-.687-.687V2.529a1.147,1.147,0,0,0-1.146-1.146H27.355a.687.687,0,1,1,0-1.375H37.667a2.523,2.523,0,0,1,2.521,2.521V6.654A.688.688,0,0,1,39.5,7.341Zm0,0"
+                          transform="translate(-25.522)" fill="#0d030e" />
+                        <path id="Контур_152" data-name="Контур 152"
+                          d="M185.686,284.673H182.02a.688.688,0,0,1,0-1.375h3.667a1.147,1.147,0,0,0,1.146-1.146v-4.125a.687.687,0,0,1,1.375,0v4.125A2.523,2.523,0,0,1,185.686,284.673Zm0,0"
+                          transform="translate(-173.541 -265.416)" fill="#0d030e" />
+                      </g>
+                    </svg>
+                    <span>Выход</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="social">
+                <li>
+                  <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                      <g id="_179319" data-name="179319" transform="translate(0.5 0.5)">
+                        <path id="Контур_34" data-name="Контур 34" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z"
+                          fill="none" stroke="#944CA2" stroke-width="1" />
+                        <path id="Контур_35" data-name="Контур 35"
+                          d="M115.626,75.132h2.245V72.547h-2.639v.009c-3.2.088-3.854,1.489-3.911,2.961h-.007v1.291h-2.178v2.531h2.178v6.785H114.6V79.339h2.688l.519-2.531H114.6v-.78A.946.946,0,0,1,115.626,75.132Z"
+                          transform="translate(-98.504 -64.368)" fill="#944CA2" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                      <g id="instagram" transform="translate(0.5 0.5)">
+                        <path id="Контур_36" data-name="Контур 36"
+                          d="M213.508,210.254A3.254,3.254,0,1,1,210.254,207,3.254,3.254,0,0,1,213.508,210.254Zm0,0"
+                          transform="translate(-195.254 -195.254)" fill="none" stroke="#944CA2" stroke-width="1" />
+                        <path id="Контур_37" data-name="Контур 37"
+                          d="M151.1,137.734a3.233,3.233,0,0,0-1.853-1.853,5.4,5.4,0,0,0-1.812-.336c-1.03-.047-1.338-.057-3.945-.057s-2.915.01-3.945.057a5.4,5.4,0,0,0-1.812.336,3.234,3.234,0,0,0-1.853,1.853,5.4,5.4,0,0,0-.336,1.813c-.047,1.029-.057,1.338-.057,3.945s.01,2.915.057,3.945a5.4,5.4,0,0,0,.336,1.812,3.233,3.233,0,0,0,1.853,1.853,5.394,5.394,0,0,0,1.813.336c1.029.047,1.338.057,3.944.057s2.916-.01,3.945-.057a5.394,5.394,0,0,0,1.813-.336,3.233,3.233,0,0,0,1.853-1.853,5.405,5.405,0,0,0,.336-1.812c.047-1.03.057-1.338.057-3.945s-.01-2.915-.057-3.945A5.394,5.394,0,0,0,151.1,137.734Zm-7.61,10.77a5.013,5.013,0,1,1,5.013-5.013A5.013,5.013,0,0,1,143.488,148.5Zm5.211-9.052a1.171,1.171,0,1,1,1.171-1.171A1.171,1.171,0,0,1,148.7,139.452Zm0,0"
+                          transform="translate(-128.488 -128.491)" fill="none" stroke="#8374d5" stroke-width="1" />
+                        <path id="Контур_38" data-name="Контур 38"
+                          d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.561,18.551a6.319,6.319,0,0,1-.4,2.091,4.4,4.4,0,0,1-2.519,2.519,6.324,6.324,0,0,1-2.091.4c-.919.042-1.212.052-3.551.052s-2.633-.01-3.551-.052a6.324,6.324,0,0,1-2.091-.4,4.4,4.4,0,0,1-2.519-2.519,6.318,6.318,0,0,1-.4-2.091C6.4,17.633,6.387,17.339,6.387,15s.01-2.633.052-3.551a6.32,6.32,0,0,1,.4-2.091A4.407,4.407,0,0,1,9.358,6.839a6.325,6.325,0,0,1,2.091-.4c.919-.042,1.212-.052,3.551-.052s2.633.01,3.551.052a6.327,6.327,0,0,1,2.091.4,4.405,4.405,0,0,1,2.519,2.519,6.319,6.319,0,0,1,.4,2.091c.042.919.052,1.212.052,3.551S23.6,17.633,23.561,18.551Zm0,0"
+                          fill="none" stroke="#944CA2" stroke-width="1" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="cabinet__right">
+              <div class="cabinet__mob-top">
+                <button class="cabinet__mob-btn">
+                  <span></span>
+                </button>
+                <div class="cabinet__mob-user">
+                  Иванов Иван Иваныч
+                </div>
+              </div>
+              <div class="cabinet-ordered">
+                <h3 class="title">
+                  <span>Заказанные</span>
+                  Услуги
+                </h3>
+                <ul class="cabinet-ordered__list cabinet-ordered__list--service">
+                  <li class="cabinet-ordered__item">
+                    <div class="cabinet-ordered__img">
+                      <img src="images/dest/content/sliders/service-2.jpg" alt="img">
+                    </div>
+                    <div class="cabinet-ordered__box">
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__num">
+                          Заказ № 00185 от 15.05.2021
+                        </div>
+                        <div class="cabinet-ordered__status">
+                          Новый
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__sum-title">
+                          Сума заказа
+                        </div>
+                        <div class="cabinet-ordered__sum">
+                          12830,00 грн
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__count-title">
+                          Эксперт
+                        </div>
+                        <div class="cabinet-ordered__count">
+                          Элеонора Иванова
+                        </div>
+                      </div>
+                      <a href="#" class="cabinet-ordered__link">
+                        ПОДРОБНЕЕ
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cabinet-ordered__item">
+                    <div class="cabinet-ordered__img">
+                      <img src="images/dest/content/sliders/service-1.jpg" alt="img">
+                    </div>
+                    <div class="cabinet-ordered__box">
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__num">
+                          Заказ № 00185 от 15.05.2021
+                        </div>
+                        <div class="cabinet-ordered__status">
+                          Новый
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__sum-title">
+                          Сума заказа
+                        </div>
+                        <div class="cabinet-ordered__sum">
+                          2830,00 грн
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__count-title">
+                          Эксперт
+                        </div>
+                        <div class="cabinet-ordered__count">
+                          Элеонора Иванова
+                        </div>
+                      </div>
+                      <a href="#" class="cabinet-ordered__link">
+                        ПОДРОБНЕЕ
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cabinet-ordered__item">
+                    <div class="cabinet-ordered__img">
+                      <img src="images/dest/content/sliders/service-2.jpg" alt="img">
+                    </div>
+                    <div class="cabinet-ordered__box">
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__num">
+                          Заказ № 00185 от 15.05.2021
+                        </div>
+                        <div class="cabinet-ordered__status">
+                          Новый
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__sum-title">
+                          Сума заказа
+                        </div>
+                        <div class="cabinet-ordered__sum">
+                          12830,00 грн
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__count-title">
+                          Эксперт
+                        </div>
+                        <div class="cabinet-ordered__count">
+                          Элеонора Иванова
+                        </div>
+                      </div>
+                      <a href="#" class="cabinet-ordered__link">
+                        ПОДРОБНЕЕ
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cabinet-ordered__item">
+                    <div class="cabinet-ordered__img">
+                      <img src="images/dest/content/sliders/service-1.jpg" alt="img">
+                    </div>
+                    <div class="cabinet-ordered__box">
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__num">
+                          Заказ № 00185 от 15.05.2021
+                        </div>
+                        <div class="cabinet-ordered__status">
+                          Новый
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__sum-title">
+                          Сума заказа
+                        </div>
+                        <div class="cabinet-ordered__sum">
+                          2830,00 грн
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__count-title">
+                          Эксперт
+                        </div>
+                        <div class="cabinet-ordered__count">
+                          Элеонора Иванова
+                        </div>
+                      </div>
+                      <a href="#" class="cabinet-ordered__link">
+                        ПОДРОБНЕЕ
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cabinet-ordered__item">
+                    <div class="cabinet-ordered__img">
+                      <img src="images/dest/content/sliders/service-2.jpg" alt="img">
+                    </div>
+                    <div class="cabinet-ordered__box">
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__num">
+                          Заказ № 00185 от 15.05.2021
+                        </div>
+                        <div class="cabinet-ordered__status">
+                          Новый
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__sum-title">
+                          Сума заказа
+                        </div>
+                        <div class="cabinet-ordered__sum">
+                          12830,00 грн
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__count-title">
+                          Эксперт
+                        </div>
+                        <div class="cabinet-ordered__count">
+                          Элеонора Иванова
+                        </div>
+                      </div>
+                      <a href="#" class="cabinet-ordered__link">
+                        ПОДРОБНЕЕ
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cabinet-ordered__item">
+                    <div class="cabinet-ordered__img">
+                      <img src="images/dest/content/sliders/service-1.jpg" alt="img">
+                    </div>
+                    <div class="cabinet-ordered__box">
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__num">
+                          Заказ № 00185 от 15.05.2021
+                        </div>
+                        <div class="cabinet-ordered__status">
+                          Новый
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__sum-title">
+                          Сума заказа
+                        </div>
+                        <div class="cabinet-ordered__sum">
+                          2830,00 грн
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__count-title">
+                          Эксперт
+                        </div>
+                        <div class="cabinet-ordered__count">
+                          Элеонора Иванова
+                        </div>
+                      </div>
+                      <a href="#" class="cabinet-ordered__link">
+                        ПОДРОБНЕЕ
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cabinet-ordered__item">
+                    <div class="cabinet-ordered__img">
+                      <img src="images/dest/content/sliders/service-1.jpg" alt="img">
+                    </div>
+                    <div class="cabinet-ordered__box">
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__num">
+                          Заказ № 00185 от 15.05.2021
+                        </div>
+                        <div class="cabinet-ordered__status">
+                          Новый
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__sum-title">
+                          Сума заказа
+                        </div>
+                        <div class="cabinet-ordered__sum">
+                          2830,00 грн
+                        </div>
+                      </div>
+                      <div class="cabinet-ordered__col">
+                        <div class="cabinet-ordered__count-title">
+                          Эксперт
+                        </div>
+                        <div class="cabinet-ordered__count">
+                          Элеонора Иванова
+                        </div>
+                      </div>
+                      <a href="#" class="cabinet-ordered__link">
+                        ПОДРОБНЕЕ
+                      </a>
+                    </div>
+                  </li>
+
+                </ul>
+                <div class="pagination">
+                  <ul class="pagination__list">
+                    <li>
+                      <a class="pagination__btn-prev pagination__last" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.01" height="19.503" viewBox="0 0 20.01 19.503">
+                          <path id="arrow-right-solid"
+                            d="M8.508,38.956l.991-.991a1.067,1.067,0,0,1,1.514,0l8.682,8.677a1.067,1.067,0,0,1,0,1.514l-8.682,8.682a1.067,1.067,0,0,1-1.514,0l-.991-.991a1.073,1.073,0,0,1,.018-1.532l5.381-5.127H1.072A1.069,1.069,0,0,1,0,48.116V46.687a1.069,1.069,0,0,1,1.072-1.072H13.907L8.525,40.488A1.065,1.065,0,0,1,8.508,38.956Z"
+                            transform="translate(0 -37.65)" fill="#944ca2" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><span class="active">3</span></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">15</a></li>
+                    <li>
+                      <a class="pagination__btn-next" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.01" height="19.503" viewBox="0 0 20.01 19.503">
+                          <path id="arrow-right-solid"
+                            d="M8.508,38.956l.991-.991a1.067,1.067,0,0,1,1.514,0l8.682,8.677a1.067,1.067,0,0,1,0,1.514l-8.682,8.682a1.067,1.067,0,0,1-1.514,0l-.991-.991a1.073,1.073,0,0,1,.018-1.532l5.381-5.127H1.072A1.069,1.069,0,0,1,0,48.116V46.687a1.069,1.069,0,0,1,1.072-1.072H13.907L8.525,40.488A1.065,1.065,0,0,1,8.508,38.956Z"
+                            transform="translate(0 -37.65)" fill="#944ca2" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="subscribe" style="background-image: url('images/dest/content/subscribe/subscribeBG.png');">
+        <div class="container">
+          <div class="subscribe__inner">
+            <h3 class="subscribe__title title">
+              <span>Не забудьте</span>
+              Подписаться
+            </h3>
+            <p class="subscribe__subtitle">
+              Чтобы первыми узнать о новинках и акциях
+            </p>
+
+            <form class="subscribe__form form">
+              <div class="subscribe__form-inner">
+                <div class="subscribe__form-input-wrap">
+                  <input type="text" placeholder="Ваше имя" required>
+                  <span class="error">Введите ваше имя</span>
+                </div>
+                <div class="subscribe__form-input-wrap">
+                  <input type="email" placeholder="Ваш email" required>
+                  <span class="error">Введите ваш почтовый адрес</span>
+                </div>
+                <button class="subscribe__btn btn">
+                  Подписаться
+                </button>
+              </div>
+              <div class="subscribe__box">
+                <span class="subscribe__check"></span>
+                <p>Я даю согласие на обработку персональных данных</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__logo">
+            <img src="images/dest/content/logo.png" alt="logo">
+          </a>
+          <ul class="footer__list">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Эксперты</a>
+            </li>
+            <li>
+              <a href="#">Услуги</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+          <a href="#" class="footer__user btn btn--user">
+            <span>
+              <img src="images/dest/icons/user.svg" alt="user">
+            </span>
+            Личный кабинет
+          </a>
+          <ul class="footer__social social">
+            <li>
+              <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                  <g id="_179319" data-name="179319" transform="translate(0.5 0.5)">
+                    <path id="Контур_34" data-name="Контур 34" d="M15,0A15,15,0,1,1,0,15,15,15,0,0,1,15,0Z" fill="none"
+                      stroke="#fff" stroke-width="1" />
+                    <path id="Контур_35" data-name="Контур 35"
+                      d="M115.626,75.132h2.245V72.547h-2.639v.009c-3.2.088-3.854,1.489-3.911,2.961h-.007v1.291h-2.178v2.531h2.178v6.785H114.6V79.339h2.688l.519-2.531H114.6v-.78A.946.946,0,0,1,115.626,75.132Z"
+                      transform="translate(-98.504 -64.368)" fill="#fff" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                  <g id="instagram" transform="translate(0.5 0.5)">
+                    <path id="Контур_36" data-name="Контур 36"
+                      d="M213.508,210.254A3.254,3.254,0,1,1,210.254,207,3.254,3.254,0,0,1,213.508,210.254Zm0,0"
+                      transform="translate(-195.254 -195.254)" fill="none" stroke="#fff" stroke-width="1" />
+                    <path id="Контур_37" data-name="Контур 37"
+                      d="M151.1,137.734a3.233,3.233,0,0,0-1.853-1.853,5.4,5.4,0,0,0-1.812-.336c-1.03-.047-1.338-.057-3.945-.057s-2.915.01-3.945.057a5.4,5.4,0,0,0-1.812.336,3.234,3.234,0,0,0-1.853,1.853,5.4,5.4,0,0,0-.336,1.813c-.047,1.029-.057,1.338-.057,3.945s.01,2.915.057,3.945a5.4,5.4,0,0,0,.336,1.812,3.233,3.233,0,0,0,1.853,1.853,5.394,5.394,0,0,0,1.813.336c1.029.047,1.338.057,3.944.057s2.916-.01,3.945-.057a5.394,5.394,0,0,0,1.813-.336,3.233,3.233,0,0,0,1.853-1.853,5.405,5.405,0,0,0,.336-1.812c.047-1.03.057-1.338.057-3.945s-.01-2.915-.057-3.945A5.394,5.394,0,0,0,151.1,137.734Zm-7.61,10.77a5.013,5.013,0,1,1,5.013-5.013A5.013,5.013,0,0,1,143.488,148.5Zm5.211-9.052a1.171,1.171,0,1,1,1.171-1.171A1.171,1.171,0,0,1,148.7,139.452Zm0,0"
+                      transform="translate(-128.488 -128.491)" fill="none" stroke="#8374d5" stroke-width="1" />
+                    <path id="Контур_38" data-name="Контур 38"
+                      d="M15,0A15,15,0,1,0,30,15,15,15,0,0,0,15,0Zm8.561,18.551a6.319,6.319,0,0,1-.4,2.091,4.4,4.4,0,0,1-2.519,2.519,6.324,6.324,0,0,1-2.091.4c-.919.042-1.212.052-3.551.052s-2.633-.01-3.551-.052a6.324,6.324,0,0,1-2.091-.4,4.4,4.4,0,0,1-2.519-2.519,6.318,6.318,0,0,1-.4-2.091C6.4,17.633,6.387,17.339,6.387,15s.01-2.633.052-3.551a6.32,6.32,0,0,1,.4-2.091A4.407,4.407,0,0,1,9.358,6.839a6.325,6.325,0,0,1,2.091-.4c.919-.042,1.212-.052,3.551-.052s2.633.01,3.551.052a6.327,6.327,0,0,1,2.091.4,4.405,4.405,0,0,1,2.519,2.519,6.319,6.319,0,0,1,.4,2.091c.042.919.052,1.212.052,3.551S23.6,17.633,23.561,18.551Zm0,0"
+                      fill="none" stroke="#fff" stroke-width="1" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p>EZOMIR © Copyright 2020. Разработано компанией SFdevelop</p>
+            <ul>
+              <li>
+                <img src="images/dest/content/footer/visa.jpg" alt="visa">
+              </li>
+              <li>
+                <img src="images/dest/content/footer/master.jpg" alt="mastercard">
+              </li>
+            </ul>
+            <a href="#" class="footer__politic">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/flipclock.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

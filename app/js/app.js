@@ -190,18 +190,35 @@ $(function () {
   $(".subscribe__box").on("click", function () {
     $(".subscribe__form").toggleClass("active");
   });
+
   $(".leave-review__box").on("click", function () {
     $(".leave-review__form").toggleClass("active");
   });
+
   $(".contacts__box").on("click", function () {
     $(".contacts__form").toggleClass("active");
   });
+
+  $(".cabinet__menu li").on("click", function () {
+    $(".cabinet__menu li").removeClass("active");
+    $(this).addClass("active");
+  });
+
 
   $(".header__menu-btn").on("click", function () {
     $(".header__menu-btn").toggleClass("active");
     $("body").toggleClass("lock");
     $(".header__list").toggleClass("open");
+  });
 
+  $(".cabinet__mob-btn").on("click", function () {
+    $("body").addClass("lock");
+    $(".cabinet__left").addClass("open");
+  });
+
+  $(".cabinet__left-btn").on("click", function () {
+    $("body").removeClass("lock");
+    $(".cabinet__left").removeClass("open");
   });
 
 
