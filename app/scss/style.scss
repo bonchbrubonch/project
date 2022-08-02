@@ -627,6 +627,7 @@
     margin: 0 0 0 auto;
     outline: none;
     border: none;
+    max-height: 55px;
   }
 
   &__box {
@@ -2928,24 +2929,203 @@
   .product-card__price {
     margin: 0 0 9px 0;
   }
-  .product-card__basket{
+
+  .product-card__basket {
     width: 45px;
     height: 45px;
   }
 }
-.cabinet-message{
-  .title span{
+
+.cabinet-message {
+  .title span {
     top: 12px;
     right: -14px;
   }
-  .form{
+
+  .form {
     margin: 20px 0 0 0;
   }
 }
 
 /*end cabinet================*/
 
+/*start modal=====*/
+.fancybox-content {
+  padding: 0;
+}
 
+.modal {
+  display: none;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  max-width: 530px;
+  width: 100%;
+  overflow: hidden;
+
+  button {
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+  &__info {
+    color: #868585;
+    font-size: 10px;
+  }
+
+  &__inner {
+    padding: 35px 55px 35px 25px;
+    background-color: #fff;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+    font-family: 'Caviar Dreams';
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__line {
+    display: block;
+    margin: 0 0 10px 0;
+    width: 105px;
+    height: 1px;
+    background-color: #8374D5;
+  }
+
+  &__form {
+    margin: 35px 0 0 0;
+  }
+
+  &__input-wrap {
+    width: 100%;
+    margin: 0 0 0 0;
+
+    input {
+      padding: 15px 15px;
+      border: 1px solid #944CA2;
+      border-radius: 27px;
+      outline: none;
+      width: 100%;
+      font-size: 16px;
+      color: #0D030E;
+    }
+
+    input::placeholder {
+      font-size: 16px;
+      color: #0D030E;
+    }
+  }
+
+  .modal__input-wrap+.modal__input-wrap,
+  .modal__wrap {
+    margin: 20px 0 0 0;
+  }
+
+  &__mid {
+    display: flex;
+  }
+
+  &__check {
+    position: relative;
+    display: block;
+    margin: 0 10px 0 0;
+    max-width: 14px;
+    min-width: 14px;
+    max-height: 14px;
+    min-height: 14px;
+    border-radius: 4px;
+    border: 1px solid #944CA2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 1px;
+      width: 10px;
+      height: 7px;
+      background-image: url("../images/dest/icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      opacity: 0;
+      transition: linear .1s;
+    }
+  }
+
+  .modal__form.active {
+    .modal__check::before {
+      opacity: 1;
+    }
+  }
+
+  &__box {
+    margin: 0 40px 0 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  &__mid {
+    margin: 10px 0 0 0;
+  }
+
+  &__mid-link {
+    font-size: 14px;
+    color: #C5C5C5;
+  }
+
+  &__bottom {
+    margin: 38px 0 0 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    margin: 0 40px 0 0;
+  }
+
+  &__bottom-link {
+    font-size: 16px;
+    color: #944CA2;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  &__wrap{
+    display: flex;
+  }
+  &__btn-show{
+    margin: 15px 10px 0 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/dest/icons/eye-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &__btn-show.active{
+    background-image: url("../images/dest/icons/eye-2.svg");
+  }
+}
+
+.modal-2 {
+  .modal__mid {
+    flex-direction: column;
+  }
+  .modal__info {
+    margin: 25px 0 0 0;
+  }
+}
+
+.modal-3 {
+  .modal__box {
+    color: #944CA2;
+  }
+}
+
+/*end modal=====*/
 
 
 

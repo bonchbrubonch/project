@@ -199,6 +199,14 @@ $(function () {
     $(".contacts__form").toggleClass("active");
   });
 
+  $(".modal__box").on("click", function () {
+    $(".modal__form").toggleClass("active");
+  });
+
+  $(".modal__btn-show").on("click", function () {
+    $(this).toggleClass("active");
+  });
+
   $(".cabinet__menu li").on("click", function () {
     $(".cabinet__menu li").removeClass("active");
     $(this).addClass("active");
