@@ -2375,10 +2375,6 @@
     text-align: center;
   }
 
-  .time__box {
-    justify-content: space-between;
-  }
-
   .service-experts__img {
     margin: 0;
     height: 165px;
@@ -2515,13 +2511,13 @@
   }
 
   .cabinet-ordered__list {
-    margin: 5px 0 0 0;
+    margin: 25px 0 0 0;
   }
 
   .cabinet-ordered__col:nth-child(1) {
     max-width: 215px;
     width: 100%;
-    margin: 0px 0 6px 8px;
+    margin: 0px 0 6px 0;
   }
 
   .cabinet-ordered__col:nth-child(2) {
@@ -2543,4 +2539,12 @@
   .cabinet-ordered__col:nth-child(2) {
     margin: 0 0 7px 0;
   }
+
+  .experts--service .slider-experts .slick-slide {
+    margin: 0;
+  }
+  .experts--service .slider-experts .card{
+    border: none;
+  }
+
 }

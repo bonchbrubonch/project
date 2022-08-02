@@ -243,6 +243,16 @@ $(function () {
       fade: true,
       centerMode: true,
       asNavFor: '.slider-card__bottom',
+      responsive: [{
+        breakpoint: 700,
+        settings: {
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: false,
+        }
+      },
+
+    ]
     });
     $('.slider-card__bottom').slick({
       slidesToShow: 4,

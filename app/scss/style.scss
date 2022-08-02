@@ -692,7 +692,7 @@
 }
 
 .catalog-sevices {
-  padding: 6px 0 170px;
+  padding: 6px 0 45px;
 
   &__list {
     display: flex;
@@ -747,7 +747,7 @@
   background-position: -24% 71%;
 
   &__inner {
-    padding: 14px 0 170px;
+    padding: 14px 0 45px;
   }
 
   &__list {
@@ -788,7 +788,7 @@
   background-position: -24% 71%;
 
   &__inner {
-    padding: 6px 0 170px;
+    padding: 6px 0 45px;
   }
 
   &__list {
@@ -829,7 +829,7 @@
   background-position: -24% 71%;
 
   &__inner {
-    padding: 6px 0 170px;
+    padding: 6px 0 45px;
   }
 
   &__list {
@@ -862,6 +862,10 @@
 
   &__left {
     width: 420px;
+    .slider-card{
+      position: sticky;
+      top: 0;
+    }
   }
 
   .slider-card__top-item {
@@ -1169,7 +1173,7 @@
   background-position: -24% 71%;
 
   &__inner {
-    padding: 6px 0 170px;
+    padding: 6px 0 45px;
   }
 
   &__list {
@@ -1190,7 +1194,7 @@
 
 /*start articl================*/
 .articl {
-  padding: 10px 0 85px;
+  padding: 10px 0 10px;
   background-image: url("../images/dest/content/page-before.png");
   background-repeat: no-repeat;
   background-size: 80%;
@@ -1713,7 +1717,7 @@
 
 /*start contacts==================*/
 .contacts {
-  padding: 10px 0 40px 0;
+  padding: 10px 0 45px 0;
 
   &__inner {
     display: flex;
@@ -1938,7 +1942,7 @@
 
 /*start basket===========*/
 .basket {
-  padding: 10px 0 80px;
+  padding: 10px 0 45px;
 
   &__inner {
     padding: 35px 70px 80px 40px;
@@ -2256,7 +2260,7 @@
 }
 
 .cabinet {
-  padding: 10px 0 50px;
+  padding: 10px 0 45px;
 
   &__inner {
     display: flex;
@@ -2576,9 +2580,9 @@
     }
 
     strong {
-      font-weight: 700;
+      font-family: 'Exo2', sans-serif;
+      font-weight: 500;
       font-size: 30px;
-      font-style: italic;
       color: #944CA2;
     }
   }
